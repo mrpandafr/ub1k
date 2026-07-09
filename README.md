@@ -19,12 +19,11 @@ UB1K raconte l'histoire d'un fichier SQLite de 1,1 Go transformé en 311 442 ato
 |:---------------------|:--------------|
 | L'histoire complète | [`HACKED-HERMES.md`](HACKED-HERMES.md) — FR, 21k caractères |
 | The full story | [`HACKED-HERMES-EN.md`](HACKED-HERMES-EN.md) — EN, 10k caractères |
-| La genèse en 15 jalons | [`HACKED-HERMES-chrono.md`](HACKED-HERMES-chrono.md) — 8 juin → 9 juillet |
-| L'architecture *why* | [`01-foundations.md`](01-foundations.md) → [`07-implications.md`](07-implications.md) |
-| La version illustrée | [`HACKED-HERMES.html`](HACKED-HERMES.html) — schémas, tableaux, timeline |
+| L'architecture *why* | [`what-is-ub1k/`](what-is-ub1k/) — 7 sections, de Harris à V3 |
+| La version illustrée | [`HTML/HACKED-HERMES.html`](HTML/HACKED-HERMES.html) — schémas, tableaux, timeline |
 | Le blog (FR) | [`blog-fr.md`](blog-fr.md) |
 | The blog (EN) | [`blog-en.md`](blog-en.md) |
-| Les métriques brutes | [`benchmark.html`](benchmark.html) — 10 requêtes, 10/10 hits |
+| Les métriques brutes | [`HTML/benchmark.html`](HTML/benchmark.html) — 10 requêtes, 10/10 hits |
 
 ### La progression
 
