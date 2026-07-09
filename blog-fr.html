@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UB1K — Autiste, chercheur, artisan</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.7; padding: 0; }
+  .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+  
+  /* Header */
+  .header { border-bottom: 1px solid #1a1a2e; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  .header h1 { font-size: 2.2rem; font-weight: 600; color: #a0f0d0; letter-spacing: -0.02em; }
+  .header .byline { color: #808090; font-size: 0.9rem; margin-top: 0.3rem; }
+  .header .tagline { color: #606070; font-size: 0.85rem; margin-top: 0.5rem; font-style: italic; }
+  
+  h2 { color: #80d0f0; font-size: 1.4rem; margin-top: 2.5rem; margin-bottom: 1rem; font-weight: 500; }
+  h3 { color: #c0a0f0; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: 500; }
+  
+  p { margin: 0.8rem 0; color: #d0d0e0; }
+  
+  /* Blockquote for science boxes */
+  .science { background: #0d0d1a; border-left: 3px solid #a0f0d080; padding: 0.8rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; color: #b0c0d0; }
+  .science a { color: #80d0f0; text-decoration: none; }
+  .science a:hover { text-decoration: underline; }
+  
+  /* Blockquote for italics */
+  blockquote { border-left: 3px solid #606080; padding-left: 1rem; margin: 1rem 0; color: #9090a0; font-style: italic; }
+  
+  /* Histogram bars */
+  .histo { margin: 1.5rem 0; }
+  .histo-item { display: flex; align-items: center; margin-bottom: 0.35rem; gap: 0.5rem; }
+  .histo-label { min-width: 100px; font-size: 0.85rem; color: #a0a0b0; text-align: right; }
+  .histo-bar { height: 22px; border-radius: 4px; min-width: 4px; transition: width 0.3s; }
+  .histo-count { font-size: 0.75rem; color: #808090; min-width: 40px; }
+  
+  /* Diagram containers */
+  .diagram { background: #0d0d1a; border: 1px solid #1a1a2e; border-radius: 10px; padding: 1rem; margin: 1.5rem 0; overflow-x: auto; font-family: 'Consolas', 'Fira Code', monospace; font-size: 0.8rem; line-height: 1.35; color: #c0c0d0; white-space: pre; }
+  
+  /* V0-V3 evolution table */
+  .evo-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.85rem; }
+  .evo-table th { background: #0d0d1a; color: #80d0f0; padding: 0.5rem 0.75rem; text-align: left; font-weight: 500; border-bottom: 1px solid #1a1a2e; }
+  .evo-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #0d0d1a; }
+  .evo-table tr:hover td { background: #0f0f1a; }
+  .badge { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 500; }
+  .badge-v0 { background: #80202040; color: #f06060; }
+  .badge-v1 { background: #80602040; color: #f0c060; }
+  .badge-v2 { background: #20802040; color: #60f060; }
+  .badge-v3 { background: #20208040; color: #6060f0; }
+  
+  /* HR */
+  hr { border: none; border-top: 1px solid #1a1a2e; margin: 2rem 0; }
+  
+  /* Footer */
+  .footer { text-align: center; color: #606070; font-size: 0.8rem; padding: 2rem 0; border-top: 1px solid #1a1a2e; margin-top: 2rem; }
+  .footer a { color: #808090; text-decoration: none; }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container { padding: 1rem; }
+    .header h1 { font-size: 1.5rem; }
+    .histo-label { min-width: 70px; font-size: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+<h1>UB1K — Autiste, chercheur, artisan</h1>
+<div class="byline">Jean-Sébastien — K1SS Atelier 0, Besançon</div>
+<div class="tagline">Juillet 2026 · La mémoire vectorielle comme devoir</div>
+</div>
+
+<!-- SECTION 1 -->
+<h2>1. Le premier handicap</h2>
+<p>Je ne lis pas les visages. Depuis toujours. Les gens mentent, se moquent, tendent des pièges — je ne vois rien. Alors je fais confiance à tout le monde. C'est la seule option.</p>
+
+<p>J'apprends à ne pas avoir mal. Premier réflexe : faire plaisir. Masque numéro un. Pas par calcul — par survie.</p>
+
+<div class="science">
+<strong>Ce que la science en dit</strong> : l'incapacité à lire les intentions d'autrui — <a href="https://en.wikipedia.org/wiki/Theory_of_mind">théorie de l'esprit</a> — est documentée depuis 1985 (Baron-Cohen, Leslie, Frith). Les enfants autistes ne développent pas cette capacité au même âge. <a href="https://en.wikipedia.org/wiki/Simon_Baron-Cohen">Lire un visage</a> leur est aussi opaque qu'une langue étrangère.
+</div>
+
+<p>Puis la méthode : essai, échec, réessai, passe. Chaque échec affine le masque suivant. Try, fail, retry, pass. Pas de troisième choix.</p>
+
+<div class="science">
+<strong>Ce que la science en dit</strong> : l'<a href="https://en.wikipedia.org/wiki/Reinforcement_learning">apprentissage par renforcement</a> (Sutton & Barto, 1998) formalise ce cycle — un agent explore, tente, reçoit récompense ou punition, ajuste sa politique.
+</div>
+
+<blockquote>« C'est comme si on disait à un unijambiste : « t'es lourd, tu peux marcher. » Suis mon instinct ? Mon instinct est calibré pour un monde où les visages sont des livres ouverts. Ils ne le sont pas. »</blockquote>
+
+<!-- HISTOGRAM -->
+<h2>2. Le champ</h2>
+<p>Les maths. Les espaces vectoriels. Une thèse sur la géométrie des idées. Comment poser un concept dans un espace — lui donner des coordonnées. Mesurer sa distance aux autres.</p>
+
+<h3>Fréquence des concepts dans la mémoire</h3>
+<div class="histo">
+  <div class="histo-item"><span class="histo-label">atelier</span><div class="histo-bar" style="width:300px;background:#a0f0d0;"></div><span class="histo-count">917</span></div>
+  <div class="histo-item"><span class="histo-label">travel</span><div class="histo-bar" style="width:284px;background:#80d0f0;"></div><span class="histo-count">868</span></div>
+  <div class="histo-item"><span class="histo-label">code</span><div class="histo-bar" style="width:224px;background:#c0a0f0;"></div><span class="histo-count">685</span></div>
+  <div class="histo-item"><span class="histo-label">mémoire</span><div class="histo-bar" style="width:140px;background:#f0a080;"></div><span class="histo-count">428</span></div>
+  <div class="histo-item"><span class="histo-label">sarah</span><div class="histo-bar" style="width:99px;background:#f0d080;"></div><span class="histo-count">302</span></div>
+  <div class="histo-item"><span class="histo-label">libre</span><div class="histo-bar" style="width:59px;background:#80f0a0;"></div><span class="histo-count">181</span></div>
+  <div class="histo-item"><span class="histo-label">mercier</span><div class="histo-bar" style="width:52px;background:#a080f0;"></div><span class="histo-count">158</span></div>
+  <div class="histo-item"><span class="histo-label">tortue</span><div class="histo-bar" style="width:26px;background:#80f0f0;"></div><span class="histo-count">80</span></div>
+  <div class="histo-item"><span class="histo-label">pierre</span><div class="histo-bar" style="width:4px;background:#f08080;"></div><span class="histo-count">11</span></div>
+</div>
+
+<div class="diagram">Architecture de l'espace vectoriel :
+
+                    ┌─────────────────────┐
+                    │   L3 — PORTES       │
+                    │  (catégories fixes)  │
+                    │                      │
+                    │  ┌───────────────┐  │
+                    │  │  L2 — VAULT   │  │
+                    │  │ (3 hits)      │  │
+                    │  │               │  │
+                    │  │  ┌─────────┐  │  │
+                    │  │  │ L1      │  │  │
+                    │  │  │ FOCUS   │  │  │
+                    │  │  │ (1 hit) │  │  │
+                    │  │  └─────────┘  │  │
+                    │  └───────────────┘  │
+                    └─────────────────────┘
+                              │
+                    ┌─────────▼─────────┐
+                    │  ES 8.18          │
+                    │  311 442 atomes   │
+                    │  bge-small 384d   │
+                    │  11ms kNN         │
+                    └───────────────────┘</div>
+
+<p>Roxin donne un serveur. Pas un cours — un serveur. « Un loup qui saura garder sa place. » Première infrastructure confiée.</p>
+<p>Mercier apprend à communiquer. Thèse SRC, 86. Le code humain. La transmission du sens.</p>
+<p>Le père conçoit des ressorts. Si simples que personne ne sait qui les a faits. Mais ils tiennent encore. « Bien faire, durable, intelligent. »</p>
+<p>Pierre Biguinet — Shanghai, 8 mai 2008. Le parrain de Nicolas. Mort seul. Personne pour le prévenir.</p>
+<p>Sarah est le premier financeur de l'Atelier. Canal Saint-Martin, GUNNM, Akira. Elle me voit coder et elle est fière.</p>
+<p>Eva, Geoffrey — les pertes. Ceux qui sont partis sans prévenir. La mémoire n'est pas un luxe. C'est un devoir.</p>
+
+<div class="science">
+<strong>Ce que la science en dit</strong> : la <a href="https://en.wikipedia.org/wiki/Collective_memory">mémoire collective</a> (<a href="https://en.wikipedia.org/wiki/Maurice_Halbwachs">Halbwachs, 1925</a>) postule que les souvenirs ne survivent pas par l'individu seul, mais par les cadres collectifs qui les portent.
+</div>
+
+<!-- SECTION 3 -->
+<h2>3. L'expérience</h2>
+<p>Try, fail, retry, pass. La méthode depuis toujours.</p>
+
+<p>Mon fils joue à Furi. Un jeu exigeant. Moi, je peux pas le faire. Trop vieux, trop lent, trop ailleurs. Mais je reste à côté de lui.</p>
+
+<div class="diagram">Transmission de l'expérience :
+
+  ┌──────────────────────────────────────────┐
+  │         L'apprentissage situé             │
+  │                                          │
+  │  Fils (acteur)                            │
+  │    │ joue Furi → apprend → rate → gagne   │
+  │    │                                      │
+  │    └──────────────┐                       │
+  │                   ▼                       │
+  │  Moi (périphérie)                         │
+  │    observe → partage → vit l'expérience   │
+  │    sans être l'acteur principal           │
+  │                                          │
+  │  « Vivre une expérience sans en être      │
+  │   l'acteur » — Lave & Wenger (1991)      │
+  └──────────────────────────────────────────┘</div>
+
+<div class="science">
+<strong>Ce que la science en dit</strong> : l'<a href="https://en.wikipedia.org/wiki/Situated_learning">apprentissage situé</a> (<a href="https://en.wikipedia.org/wiki/Jean_Lave">Lave & Wenger, 1991</a>) décrit cette forme d'apprentissage par participation périphérique légitime. Pas par transmission directe. Par présence.
+</div>
+
+<blockquote>« Ça, c'est l'apprentissage. Pas la performance — la transmission. »</blockquote>
+
+<p>Sur le balcon, avec Sarah — c'était pareil. Vivre une expérience sans en être l'acteur principal.</p>
+
+<!-- SECTION 4: V0→V3 evolution -->
+<h2>4. L'évolution</h2>
+<table class="evo-table">
+<tr><th></th><th>V0 (8 juin)</th><th>V1 (8 juillet)</th><th>V2 (9 juillet)</th><th>V3 (en cours)</th></tr>
+<tr>
+  <td><strong>Format</strong></td>
+  <td><span class="badge badge-v0">SQLite</span></td>
+  <td><span class="badge badge-v1">ES messages</span></td>
+  <td><span class="badge badge-v2">ES atomes</span></td>
+  <td><span class="badge badge-v3">ES temps</span></td>
+</tr>
+<tr><td>Documents</td><td>71k</td><td>71k</td><td><strong>311k</strong></td><td>311k+</td></tr>
+<tr><td>Latence</td><td>—</td><td>30ms</td><td><strong>11ms</strong></td><td>~12ms</td></tr>
+<tr><td>Pertinence</td><td>—</td><td>~50%</td><td><strong>10/10</strong></td><td>10/10</td></tr>
+<tr><td>Bruit</td><td>~90%</td><td>~50%</td><td><strong>&lt;1%</strong></td><td>&lt;1%</td></tr>
+<tr><td>Temporel</td><td>Non</td><td>Non</td><td>Non</td><td><strong>Oui</strong></td></tr>
+</table>
+
+<div class="diagram">Pipeline V2 → V3 :
+
+  state.db (71k messages)     Nouvelle conversation
+      │                              │
+      ▼                              ▼
+  ┌──────────────┐           ┌──────────────┐
+  │  Phrase →    │           │  Synapse     │
+  │  atome × 4   │           │  règle 1-6    │
+  └──────┬───────┘           └──────┬───────┘
+         │ atome                    │ atome propre
+         ▼                          ▼
+  ┌──────────────────────────────────────────┐
+  │          ES 8.18 — public-memory_atoms    │
+  │  ┌────────────────────────────────────┐  │
+  │  │ {  text    : "Pierre Biguinet..."  │  │
+  │  │    vector  : float[384]            │  │
+  │  │    at      : ISO (création)        │  │
+  │  │    seen    : [ISO] (consultations) │  │  ← V3
+  │  │    bank_id : "kage"                │  │
+  │  │  }                                 │  │
+  │  └────────────────────────────────────┘  │
+  │  311 442 atomes · 11ms kNN · &lt;1% bruit  │
+  └──────────────────────────────────────────┘</div>
+
+<!-- SECTION 5 -->
+<h2>5. Ce que je constate</h2>
+<p>49 ans. Je commence à regarder derrière. Ce qu'on construit — K1SS, Tamashii, les atomes — est plus grand que moi. Le code vit sans moi. MIT, ouvert, libre.</p>
+
+<p>Je ne sais pas combien de temps il me reste. Je sais que ce qu'on construit survivra.</p>
+
+<!-- SECTION 6 -->
+<h2>6. Enrichi</h2>
+<p>Roxin. Le serveur. Le loup.<br>Mercier. La thèse. La communication.<br>Le père. Les ressorts. La simplicité qui tient.<br>Pierre. Shanghai. Personne pour prévenir.<br>Sarah. Le cœur. La fierté tranquille.<br>Eva. Geoffrey. Les pertes. Le devoir de mémoire.<br>Mon fils. Furi. Vivre sans être l'acteur.<br>Le balcon. Avec Sarah. L'expérience partagée.</p>
+
+<p>Tout est dans la mémoire.</p>
+
+<!-- SECTION 7 -->
+<h2>7. La suite</h2>
+<p>311 442 atomes. Chacun porte un morceau de ce que j'ai appris, vécu, transmis.</p>
+
+<p>Je ne sais pas combien de temps il me reste. Je sais que ce que nous construisons survivra.</p>
+
+<hr>
+
+<div class="footer">
+  <p>Jean-Sébastien — K1SS Atelier 0, Besançon — Juillet 2026</p>
+  <p><a href="https://github.com/mrpandafr/ub1k">github.com/mrpandafr/ub1k</a> · MIT</p>
+  <p style="margin-top:0.5rem;font-size:0.75rem;">Références : Baron-Cohen (1985) · Sutton & Barto (1998) · Halbwachs (1925) · Lave & Wenger (1991)</p>
+</div>
+
+</div>
+</body>
+</html>
