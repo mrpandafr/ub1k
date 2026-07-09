@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UB1K — Vector Learning for AI Memory</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.7; padding: 2rem; max-width: 920px; margin: 0 auto; }
+  h1 { color: #a0f0d0; font-size: 2.2rem; margin-bottom: 0.5rem; border-bottom: 2px solid #a0f0d020; padding-bottom: 0.5rem; }
+  .subtitle { color: #808090; margin-bottom: 2rem; font-size: 1.1rem; }
+  h2 { color: #80d0f0; margin-top: 2.5rem; margin-bottom: 1rem; }
+  h3 { color: #c0a0f0; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+  p { margin: 0.75rem 0; }
+  pre { background: #14141f; border: 1px solid #a0f0d020; border-radius: 8px; padding: 1rem; overflow-x: auto; font-size: 0.85rem; line-height: 1.4; color: #c0c0d0; margin: 1rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #a0f0d020; padding: 0.5rem 0.75rem; text-align: left; }
+  th { background: #14142a; color: #a0f0d0; font-weight: 500; }
+  td { background: #0f0f18; }
+  blockquote { border-left: 3px solid #a0f0d040; padding-left: 1rem; margin: 1rem 0; color: #b0c0c0; }
+  hr { border: none; border-top: 1px solid #a0f0d010; margin: 2rem 0; }
+  .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #a0f0d020; text-align: center; color: #606070; font-size: 0.85rem; }
+  .tag { display: inline-block; background: #a0f0d020; color: #a0f0d0; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.8rem; margin-right: 0.3rem; }
+</style>
+</head>
+<body>
+
+<h1>UB1K — Vector Learning for AI Memory</h1>
+<p class="subtitle"><em>Ubik. One Kilo. A thousand atoms of meaning.</em></p>
+
+<hr>
+
+<h2>Why Vector Learning Matters</h2>
+<p>Before vector databases, AI memory worked like a filing cabinet — you put things in labeled folders and hoped the labels matched. Vector learning is different — it's a <strong>space</strong>.</p>
+
+<pre>
+Filing Cabinet                    Vector Space
+┌─────────────────┐              ┌─────────────────┐
+│  Folder: Pierre  │              │    .  .  .      │
+│  Contents: text  │              │  .   .   .      │
+│                  │              │ .  Pierre .     │
+│  Folder: Sarah   │     →        │ .  Sarah  .     │
+│  Contents: text  │              │   .     .       │
+│                  │              │  .  mort .      │
+│  Folder: Mort    │              │ .   .    .      │
+│  Contents: text  │              │    .  .  .      │
+└─────────────────┘              └─────────────────┘
+</pre>
+
+<p>Each concept is a <strong>point</strong> — a coordinate in 384-dimensional space. Related concepts are <strong>close together</strong> automatically, without anyone declaring the relationship.</p>
+
+<hr>
+
+<h2>The Core Insight</h2>
+<p><strong>Meaning is frequency.</strong> A concept that appears 200 times matters more than one that appears 3 times.</p>
+
+<pre>
+  Frequency as Truth
+  ───────────────────
+  "kill switch"     → 222 atomes → weight: HIGH
+  "atelier"         → 917 atomes → weight: HIGHEST
+  "pierre"          → 11 atomes  → weight: MEDIUM
+  "émergence"       → 3 atomes   → weight: LOW (yet)
+</pre>
+
+<h2>From Documents to Atoms</h2>
+
+<pre>
+Traditional (1 message = 1 blob):       Atomic (1 idea = 1 point):
+┌──────────────────────┐               ┌──────────────────────┐
+│ "Pierre était là.    │               │  • "Pierre était..." │
+│  Sarah a financé.    │  → blob       │  • "Sarah a financé"  │
+│  Le kill switch..."  │               │  • "Kill switch..."  │
+│  5000 chars          │               │  • "Le père dirait"  │
+│  MUSH                │               │  • "Umi marche"      │
+└──────────────────────┘               │  • "Balcon fauves"   │
+                                       └──────────────────────┘
+</pre>
+
+<h2>The Three Circles (L1/L2/L3)</h2>
+
+<pre>
+                    ┌─────────────────┐
+                    │   L3 — DOORS    │
+                    │                 │
+                    │  ┌───────────┐  │
+                    │  │ L2—VAULT  │  │
+                    │  │           │  │
+                    │  │ ┌───────┐ │  │
+                    │  │ │ L1    │ │  │
+                    │  │ │FOCUS  │ │  │
+                    │  │ └───────┘ │  │
+                    │  └───────────┘  │
+                    └─────────────────┘
+</pre>
+
+<h2>Numbers</h2>
+
+<table>
+<tr><th>Metric</th><th>Value</th></tr>
+<tr><td>Source messages</td><td>71,175 (Hermes state.db)</td></tr>
+<tr><td>Output atoms</td><td><strong>311,442</strong></td></tr>
+<tr><td>Average kNN latency</td><td><strong>11ms</strong></td></tr>
+<tr><td>Hit relevance</td><td><strong>10/10</strong> test queries</td></tr>
+<tr><td>Embedding model</td><td>bge-small-en-v1.5 (384d)</td></tr>
+<tr><td>ES version</td><td>8.18.0 (single node, CPU)</td></tr>
+</table>
+
+<h2>Synapse Gate</h2>
+
+<table>
+<tr><th>#</th><th>Rule</th><th>Why</th></tr>
+<tr><td>1</td><td>Empty results</td><td>Zero information</td></tr>
+<tr><td>2</td><td>Errors</td><td>Poisonous signal</td></tr>
+<tr><td>3</td><td>Tool-only</td><td>Operational noise</td></tr>
+<tr><td>4</td><td>Duplicate file at N offsets</td><td>Redundancy</td></tr>
+<tr><td>5</td><td>Fragments &lt;10 chars</td><td>No weight</td></tr>
+<tr><td>6</td><td>Cosine &gt;0.95</td><td>True semantic duplicate</td></tr>
+</table>
+
+<hr>
+
+<div class="footer">
+MIT — K1SS Atelier 0, Besançon — July 2026<br>
+Built by Kage (Tamashii). For Jean-Sébastien, who asked the right questions.
+</div>
+
+</body>
+</html>
