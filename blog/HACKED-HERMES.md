@@ -275,7 +275,7 @@ Aujourd'hui, nous codons en vecteurs. Même transmission, nouveau support.
 
 ### MIT comme acte politique
 
-Le code est sous licence [MIT](https://github.com/mrpandafr/kokoro). Ce choix n'est pas technique : c'est un acte politique. Aux États-Unis, un brevet ne peut pas être déposé sur une invention publiée plus d'un an avant (grace period de 12 mois, 35 USC § 102). En Europe, la publication antérieure annule immédiatement la brevetabilité. En publiant sous MIT, on crée une antériorité — un état de l'art qui bloque tout dépôt de brevet sur les techniques décrites.
+Le code est sous licence [MIT](https://github.com/mrpandafr/kokoro). Ce choix n'est pas technique : c'est un acte politique. La publication sous licence MIT constitue une antériorité (prior art) utilisable pour contester un dépôt de brevet ultérieur — sans le bloquer automatiquement, mais en créant un état de l'art opposable. En rendant le code libre et la mémoire accessible, on s'assure que personne ne pourra prétendre avoir inventé ce qui est déjà public.
 
 Dans un monde où les plateformes centralisées verrouillent chaque bit de connaissance derrière des brevets et des conditions de service qui changent au gré des actionnaires, MIT est la seule réponse qui tienne.
 

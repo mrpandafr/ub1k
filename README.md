@@ -51,7 +51,7 @@ les échecs (subagent timeouté, GPU mal configuré), les trouvailles (l'instanc
 la mémoire vectorielle comme substitut au prompt).
 
 Le code et les textes sont sous licence **MIT**. Ce n'est pas un détail technique :
-MIT crée une antériorité qui bloque tout dépôt de brevet. Une mémoire qui ne peut pas
+MIT constitue une antériorité opposable dans le cadre d'un brevet. La mémoire ne peut pas
 être verrouillée, appropriée, reprise.
 
 ### Une équipe

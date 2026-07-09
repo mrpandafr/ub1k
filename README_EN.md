@@ -50,8 +50,8 @@ the failures (timed-out subagent, misconfigured GPU), the discoveries (the blank
 vector memory as a substitute for prompts).
 
 The code and texts are under the **MIT** license. This is not a technical detail:
-MIT creates prior art that blocks any patent filing. A memory that cannot be
-locked, appropriated, or taken back.
+MIT constitutes opposable prior art in a patent context. A memory that cannot
+be locked, appropriated, or taken back.
 
 ### A team
 

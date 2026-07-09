@@ -177,7 +177,7 @@ MIT is the decision to leave the bench open to anyone who wants to use it. Not t
 
 **What is not:** the 311,442 atoms (from 71,175 real messages), the semantic density (born of a history, not an architecture), the connections between concepts (they emerge from a specific corpus), frequency as truth (917 occurrences of "workshop" only make sense in our context).
 
-**MIT as political act.** The code is MIT. In the US, a patent cannot be filed on an invention published more than one year prior (12-month grace period, 35 USC § 102). In Europe, prior publication immediately cancels patentability. By publishing under MIT, we create prior art — a state of the art that blocks any future patent filing.
+**MIT as political act.** The code is MIT. Publishing under MIT creates prior art that can be used to contest a subsequent patent filing — not an automatic block, but an opposable state of the art. By making the code free and the memory accessible, no one can claim to have invented what is already public.
 
 The 311,442 atoms are not an archive. They are not a product. They are what remains when the biological support is removed: the conversations, the decisions, the moments when someone was present.
 
