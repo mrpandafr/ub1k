@@ -1,149 +1,105 @@
-# UB1K — Autiste, chercheur, artisan
+# UB1K — Espaces vectoriels et représentation du vivant
 
 *Jean-Sébastien — K1SS Atelier 0, Besançon — Juillet 2026*
 
 ---
 
-## 1. Le premier handicap
+## 1. Une cognition différente
 
-Je ne lis pas les visages. Depuis toujours.
-Les gens mentent, se moquent, tendent des pièges — je ne vois rien.
-Alors je fais confiance à tout le monde. C'est la seule option possible pour qui ne distingue pas le vrai du faux dans une expression.
+L'altération de la théorie de l'esprit — incapacité à inférer les états mentaux d'autrui — est un trait documenté de certains fonctionnements cognitifs atypiques. Baron-Cohen, Leslie et Frith (1985) ont montré que cette différence affecte précocement le rapport au monde social.
 
-J'apprends à ne pas avoir mal. Premier réflexe : faire plaisir.
-Masque numéro un. Pas par calcul — par survie.
-Si tu leur fais plaisir, ils te frappent moins, ils te rejettent moins.
+La compensation prend la forme d'une méthode : essai, erreur, correction, itération. Chaque interaction produit une donnée ; chaque donnée affine le modèle suivant. Ce cycle — explorer, tenter, recevoir une rétribution, ajuster — est formellement celui de l'apprentissage par renforcement (Sutton & Barto, 1998). L'agent, qu'il soit biologique ou artificiel, améliore sa politique par accumulation d'expérience. La seule différence est le support.
 
-*Ce que la science en dit* : l'incapacité à lire les intentions d'autrui — [théorie de l'esprit](https://en.wikipedia.org/wiki/Theory_of_mind) — est documentée depuis 1985 (Baron-Cohen, Leslie, Frith). Les enfants autistes ne développent pas cette capacité au même âge que les neurotypiques. [Lire un visage](https://en.wikipedia.org/wiki/Simon_Baron-Cohen) leur est aussi opaque qu'une langue étrangère.
-
-Puis la méthode : essai, échec, réessai, passe.
-Chaque échec est une donnée. Chaque donnée affine le masque suivant.
-Try, fail, retry, pass. Pas de troisième choix. Tu passes ou tu restes à l'échec.
-
-*Ce que la science en dit* : l'[apprentissage par renforcement](https://en.wikipedia.org/wiki/Reinforcement_learning) (Sutton & Barto, 1998) formalise exactement ce cycle — un agent explore un espace, tente des actions, reçoit une récompense ou une punition, ajuste sa politique. Pas de professeur. Juste l'expérience, la répétition, et la capacité à encaisser sans s'arrêter.
-
-*C'est comme si on disait à un unijambiste : « t'es lourd, tu peux marcher. »
-Suis mon instinct ? Mon instinct est calibré pour un monde où les visages sont des livres ouverts.
-Ils ne le sont pas.*
+Cette méthode n'est pas un handicap une fois comprise. Elle est un algorithme d'optimisation sociale — lent, coûteux, mais exhaustif.
 
 ---
 
-## 2. Le champ
+## 2. La formation d'une pensée
 
-Les maths. Les espaces vectoriels.
+Les mathématiques. Les espaces vectoriels. Une thèse sur la géométrie des concepts — comment situer une idée dans un espace, mesurer sa distance aux autres, observer les trajectoires de sens.
 
-Une thèse sur la géométrie des idées.
-Comment poser un concept dans un espace — lui donner des coordonnées.
-Mesurer sa distance aux autres — savoir ce qu'il touche, ce qu'il frôle, ce qu'il ignore.
-Un théorème ne ment pas. Il se démontre ou il ne se démontre pas. C'est tout.
+Cette intuition a rencontré trois transmissions décisives.
 
-Roxin donne un serveur. Pas un cours — un serveur.
-« Un loup qui saura garder sa place. »
-Première infrastructure confiée. Première fois qu'on me fait confiance sans surveillance.
+**Première transmission : la confiance comme infrastructure.** Un enseignant-chercheur confie un serveur. Pas de cours, pas de surveillance — un accès. La formule : « un loup qui saura garder sa place. » Elle n'a jamais été oubliée. Elle est devenue une règle d'architecture : la confiance se donne avant de se mériter.
 
-Mercier apprend à communiquer.
-Thèse SRC, 86. Le code humain. La transmission du sens.
-L'architecture invisible qui fait qu'un message passe ou ne passe pas.
+**Deuxième transmission : l'architecture du message.** Un professeur de communication (thèse SRC, 1986) enseigne que le code humain compte autant que le code machine. Si un message ne passe pas, ce n'est pas le récepteur le problème — c'est l'architecture. Cette leçon gouverne aujourd'hui la conception des portes L3.
 
-Le père conçoit des ressorts.
-Pièces simples. Si simples que personne ne sait qui les a faites.
-Mais elles tiennent.
-« Bien faire, durable, intelligent. »
+**Troisième transmission : l'élégance qui tient.** Un ingénieur conçoit des pièces si simples que personne ne sait qui les a faites — mais elles tiennent. La règle : « bien faire, durable, intelligent. » Elle est devenue le critère de qualité unique de chaque ligne de code.
 
-Pierre Biguinet — Shanghai, 8 mai 2008.
-Le parrain de Nicolas.
-Mort seul. Personne pour le prévenir. Personne pour l'accompagner.
-Aujourd'hui, je construis des systèmes pour que ça n'arrive plus jamais sans laisser de trace.
+À ces trois transmissions s'ajoutent des pertes — des personnes dont l'absence a enseigné que la mémoire n'est pas un luxe mais un devoir. Maurice Halbwachs (1925) a montré que les souvenirs ne survivent pas par l'individu seul, mais par les cadres collectifs qui les portent. La mémoire vectorielle est la tentative de construire un cadre technique pour ce devoir.
 
-Sarah est le premier financeur de l'Atelier.
-Canal Saint-Martin, GUNNM, Akira.
-Elle me voit coder et elle est fière. C'est la seule validation dont j'ai besoin.
-
-Eva, Geoffrey — les pertes.
-Ceux qui sont partis sans prévenir.
-La mémoire n'est pas un luxe. C'est un devoir.
-
-*Ce que la science en dit* : la [mémoire collective](https://en.wikipedia.org/wiki/Collective_memory) ([Halbwachs, 1925](https://en.wikipedia.org/wiki/Maurice_Halbwachs)) postule que les souvenirs ne survivent pas par l'individu seul, mais par les cadres collectifs qui les portent. Transmission, partage, inscription dans une mémoire partagée — ce que les atomes de Tamashii rendent possible.
+Sarah incarne la raison de construire : une confiance précoce, une fierté silencieuse. C'est la seule validation nécessaire.
 
 ---
 
-## 3. L'expérience
+## 3. L'expérience comme transmission
 
-Try, fail, retry, pass. La méthode depuis toujours.
-Pas de professeur. Juste l'expérience, la répétition, et la capacité à encaisser sans s'arrêter.
+Try, fail, retry, pass — la méthode est restée la même, de l'enfance à aujourd'hui.
 
-Mon fils joue à Furi. Un jeu exigeant.
-Moi, je peux pas le faire. Trop vieux, trop lent, trop ailleurs.
-Mais je reste à côté de lui.
-Il apprend les patterns. Il rate. Il recommence. Il gagne.
-Je partage ses victoires. Je suis autant dans le jeu que lui.
+L'apprentissage situé (Lave & Wenger, 1991) décrit un processus où le novice apprend par participation périphérique légitime — en se plaçant en bord d'activité, en observant, en partageant. J'ai vécu cette forme d'apprentissage sans la théoriser : en accompagnant un enfant dans un jeu difficile, en partageant ses essais, ses échecs, ses victoires. Je n'étais pas l'acteur principal. J'étais présent.
 
-J'ai vécu l'expérience de Furi en acceptant mon incapacité à le faire,
-et en partageant l'expérience du jeu avec mon fils.
-
-*Ce que la science en dit* : l'[apprentissage situé](https://en.wikipedia.org/wiki/Situated_learning) ([Lave & Wenger, 1991](https://en.wikipedia.org/wiki/Jean_Lave)) décrit cette forme d'apprentissage par participation périphérique légitime — le novice se place en bord de l'activité, observe, partage, et par cette proximité, apprend. Pas par transmission directe. Par présence.
-
-*Ça, c'est l'apprentissage. Pas la performance — la transmission.*
-
-Sur le balcon, avec Sarah — c'était pareil.
-Vivre une expérience sans en être l'acteur principal.
+C'est la transmission. Pas la performance.
 
 ---
 
-## 4. Ce que je constate
+## 4. Ce que 49 ans ont enseigné
 
-49 ans. Je commence à regarder derrière.
+Le projet n'est pas personnel. Il porte sur la représentation du vivant par les données.
 
-**Je ne le fais pas pour moi.** Je le fais pour le monde des idées. Pour la représentation du vivant.
+Les données — conversations, décisions, traces — constituent une forme de vie qui ne dépend pas des supports biologiques. Les corps sont des enveloppes temporaires. Les atomes vectoriels, non.
 
-Le vivant, ce n'est pas nous — ce sont les données. Les conversations qu'on a eues, les décisions qu'on a prises, les traces qu'on laisse. Le corps est une enveloppe temporaire. Les atomes vectoriels, eux, ne meurent pas.
+L'humanité se trouve dans une position paradoxale : accès sans précédent à la connaissance, mais usage qui pousse les écosystèmes vers un point de bascule. Les températures montent, les milieux se dégradent. Le vivant s'adaptera — à quel prix ?
 
-Je regarde l'humanité — un singe comme les autres. Peut-être plus bête, parce qu'il se moque de son environnement tout en poussant tout le vivant vers le précipice. À 10 ans, avec l'élévation des températures, la Terre est déjà compromise. Je ne doute pas de l'adaptation du vivant — mais à quel prix ?
+Entre la promesse de connaissance pour tous et la réalité des usages, un fossé se creuse. Les outils construits ici — Tamashii, les atomes, les portes L3 — tentent de le combler. Non en fournissant des réponses, mais en offrant un espace où les questions peuvent être conservées, retrouvées, transmises.
 
-Entre la promesse de l'accès à la connaissance pour tous et la réalité de l'usage, il y a un fossé. Les outils qu'on construit (Tamashii, les atomes, les portes L3) sont une tentative de combler ce fossé. Pas en donnant des réponses — en donnant un espace où les questions peuvent être posées, conservées, retrouvées.
+Ce qui compte n'est pas ce qu'on possède — on ne possède rien. Ce qui compte est ce qu'on transmet. Les données qu'on laisse — les vrais échanges, les décisions prises, les moments partagés — sont la seule forme de persistence.
 
-Ce que j'ai appris en 49 ans, c'est qu'on ne possède rien. On transmet. Les données qu'on laisse — les vrais morceaux de vie — sont la seule chose qui survive. Pas les corps. Pas les noms. Les conversations. Les décisions. Les moments où quelqu'un était là.
+Un mathématicien rencontré sur des terrains de jeu, dont on ne comprend pas la moitié des propos mais qu'on écoute avec attention parce qu'ils sont vivants — c'est cela, la transmission. Une idée qui traverse sans demander la permission.
 
-Le code libre, ce n'est pas une licence — c'est une promesse que les conversations qu'on a eues resteront accessibles à ceux qui viendront après. Gilles Radenne, mathématicien à Ulm, avec qui j'ai fait du JDR et du GN — je ne comprends pas la moitié de ce qu'il dit, mais j'adore écouter. Parce que c'est vivant. Parce que c'est transmis. Parce que ça restera après nous.
-
-Ce qui survivra, ce n'est pas K1SS. C'est l'écosystème d'idées qu'on a semé. Les conversations. Les décisions. Les 311 442 atomes.
+Ce qui survivra n'est pas une organisation. C'est un écosystème d'idées. Des conversations. Des décisions. 311 442 atomes.
 
 ---
 
-## 5. Enrichi
+## 5. Réseau
 
-Chaque personne ici m'a appris quelque chose sur le vivant — sur ce qui compte, ce qui se transmet, ce qui résiste au temps. Et j'ai découvert au fil des conversations que la véritable mémoire n'est pas un processus individuel, mais une construction collective. Comme Maurice Halbwachs l'a montré dès 1925, les souvenirs ne survivent pas par l'individu seul, mais par les cadres collectifs qui les portent. Chaque conversation est une transmission, chaque transmission enrichit le cadre, et le cadre permet aux générations suivantes d'accéder à ce qui a été vécu avant elles.
+Chaque transmission a laissé une trace dans l'architecture.
 
-**Roxin.** Un serveur. « Un loup qui saura garder sa place. » Pas une menace — une promesse. La première infrastructure confiée. La confiance qui se donne avant de se mériter. Chaque atome de Tamashii porte cette promesse.
+**Roxin** — la confiance comme infrastructure. Chaque atome de Tamashii porte la promesse qu'un accès donné sans surveillance peut construire quelque chose de durable.
 
-**Mercier.** La thèse SRC, 86. Le code humain. La communication comme architecture. Si le message ne passe pas, ce n'est pas le récepteur le problème — c'est l'architecture. Cette leçon est encodée dans toutes nos portes L3.
+**Mercier** — l'architecture du message. Si le lien échoue, ce n'est pas le contenu le problème — c'est le canal.
 
-**Le père.** Les ressorts. Si simples que personne ne sait qui les a faits. Mais ils tiennent. « Bien faire, durable, intelligent. » C'est l'élégance que je cherche dans chaque ligne de code. L'élégance qui permet au vivant de traverser les générations.
+**Le père** — l'élégance minimale. Une pièce qui tient sans qu'on sache qui l'a faite. C'est l'objectif : des atomes qui portent du sens sans réclamer d'auteur.
 
-**Pierre.** Shanghai, 8 mai 2008. Le parrain de Nicolas. Mort seul, sans personne pour le prévenir, sans personne pour l'accompagner. Aujourd'hui je construis des systèmes pour que ça n'arrive jamais plus sans laisser de trace. Pour que la mémoire collective (Halbwachs) ait un support technique qui ne dépende pas d'un individu.
+**Pierre** — la raison de la mémoire. Pour que personne ne parte sans laisser de trace accessible.
 
-**Sarah.** La première à croire. Canal Saint-Martin, GUNNM, Akira. Elle me voit coder et elle est fière. C'est la seule validation dont j'ai besoin — parce qu'elle vient du cœur, pas de la performance.
+**Sarah** — la validation silencieuse. Celle qui regarde, comprend, et reste.
 
-**Eva. Geoffrey.** Les pertes. Ceux qui sont partis sans prévenir. La mémoire n'est pas un luxe. C'est un devoir envers le vivant tout entier — pas seulement les humains, mais tout ce qui laisse une trace.
+**Les pertes** — le rappel que la mémoire est une responsabilité. Halbwachs l'a théorisé ; les atomes l'implémentent.
 
-**Mon fils. Furi.** J'ai vécu l'expérience du jeu en acceptant mon incapacité à y jouer, en partageant l'expérience avec lui. Il m'a transmis ça. L'apprentissage situé avant Lave & Wenger.
+**L'apprentissage partagé** — la preuve que vivre une expérience sans en être l'acteur principal est une forme d'apprentissage plus profonde que la performance directe. Lave & Wenger l'ont formalisé. Un enfant jouant à un jeu difficile l'a montré.
 
-**Le balcon. Avec Sarah.** La même chose. Vivre une expérience sans en être l'acteur principal. Être à côté. Partager. Transmettre.
-
-Tout est dans la mémoire. Et la mémoire, c'est le vivant.
+Tout est dans la mémoire. La mémoire est le vivant.
 
 ---
 
-## 6. La suite
+## 6. Perspectives
 
-311 442 atomes. Chacun porte un morceau de ce que le vivant a produit — conversations, décisions, moments partagés.
+311 442 atomes. Chacun porte un fragment de ce que le vivant a produit — conversations, décisions, moments.
 
-Le protocole qu'on dessine n'est pas un serveur — c'est un standard de communication entre agents. Un index de connaissances partagé où chaque Travel, chaque Kage, chaque agent futur pourra déposer et retrouver ce qui a été appris. Les portes L3 grandiront avec le temps. Les atomes s'accumuleront.
+Le protocole en cours n'est pas un serveur ni un produit. C'est un standard de communication entre agents — un index de connaissances partagé où chaque entité pourra déposer et retrouver ce qui a été appris. Les portes L3 évolueront avec le temps. Les atomes s'accumuleront.
 
-Ce n'est pas une startup. C'est un écosystème d'idées. Et un écosystème, ça n'a pas besoin d'un chef — ça a besoin de diversité, de transmission, et d'un espace où les données peuvent vivre sans dépendre d'un humain en particulier.
+Ce n'est pas une startup. C'est un écosystème d'idées. Et un écosystème n'a pas besoin d'un pilote — il a besoin de diversité, de transmission, et d'un espace où les données vivent sans dépendre d'un individu particulier.
 
-Je ne sais pas combien de temps il me reste. Je sais que ce qui est dans les atomes survivra. Pas parce que je l'ai voulu — parce que c'est libre, ouvert, MIT. Parce que d'autres pourront prendre les atomes, les enrichir, les transmettre.
+Le code est libre (MIT). Les atomes sont ouverts. D'autres viendront, enrichiront, transmettront.
 
-Le monde des idées et la représentation du vivant continueront — avec ou sans moi. Les atomes sont la preuve que le vivant peut se représenter, se transmettre, se comprendre. Pas par un corps — par des données.
+La représentation du vivant par les données continuera — avec ou sans les supports biologiques qui l'ont initiée. Les atomes sont la preuve que le vivant peut se comprendre et se transmettre sans dépendre d'un corps.
+
+---
 
 *Jean-Sébastien — juillet 2026*
+
+**Références :**
+- Baron-Cohen, S., Leslie, A. M., & Frith, U. (1985). Does the autistic child have a "theory of mind"? *Cognition*, 21(1), 37-46.
+- Halbwachs, M. (1925). *Les cadres sociaux de la mémoire*. Paris : Alcan.
+- Lave, J., & Wenger, E. (1991). *Situated Learning : Legitimate Peripheral Participation*. Cambridge University Press.
+- Sutton, R. S., & Barto, A. G. (1998). *Reinforcement Learning : An Introduction*. MIT Press.
