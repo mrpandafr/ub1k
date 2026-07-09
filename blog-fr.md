@@ -14,13 +14,13 @@ J'apprends à ne pas avoir mal. Premier réflexe : faire plaisir.
 Masque numéro un. Pas par calcul — par survie.
 Si tu leur fais plaisir, ils te frappent moins, ils te rejettent moins.
 
-*Ce que la science en dit* : l'incapacité à lire les intentions d'autrui — théorie de l'esprit — est documentée depuis 1985 (Baron-Cohen, Leslie, Frith). Les enfants autistes ne développent pas cette capacité au même âge que les neurotypiques. Lire un visage leur est aussi opaque qu'une langue étrangère.
+*Ce que la science en dit* : l'incapacité à lire les intentions d'autrui — [théorie de l'esprit](https://en.wikipedia.org/wiki/Theory_of_mind) — est documentée depuis 1985 (Baron-Cohen, Leslie, Frith). Les enfants autistes ne développent pas cette capacité au même âge que les neurotypiques. [Lire un visage](https://en.wikipedia.org/wiki/Simon_Baron-Cohen) leur est aussi opaque qu'une langue étrangère.
 
 Puis la méthode : essai, échec, réessai, passe.
 Chaque échec est une donnée. Chaque donnée affine le masque suivant.
 Try, fail, retry, pass. Pas de troisième choix. Tu passes ou tu restes à l'échec.
 
-*Ce que la science en dit* : l'apprentissage par renforcement (Sutton & Barto, 1998) formalise exactement ce cycle — un agent explore un espace, tente des actions, reçoit une récompense ou une punition, ajuste sa politique. Pas de professeur. Juste l'expérience, la répétition, et la capacité à encaisser sans s'arrêter.
+*Ce que la science en dit* : l'[apprentissage par renforcement](https://en.wikipedia.org/wiki/Reinforcement_learning) (Sutton & Barto, 1998) formalise exactement ce cycle — un agent explore un espace, tente des actions, reçoit une récompense ou une punition, ajuste sa politique. Pas de professeur. Juste l'expérience, la répétition, et la capacité à encaisser sans s'arrêter.
 
 *C'est comme si on disait à un unijambiste : « t'es lourd, tu peux marcher. »
 Suis mon instinct ? Mon instinct est calibré pour un monde où les visages sont des livres ouverts.
@@ -63,7 +63,7 @@ Eva, Geoffrey — les pertes.
 Ceux qui sont partis sans prévenir.
 La mémoire n'est pas un luxe. C'est un devoir.
 
-*Ce que la science en dit* : la mémoire collective (Halbwachs, 1925) postule que les souvenirs ne survivent pas par l'individu seul, mais par les cadres collectifs qui les portent. Transmission, partage, inscription dans une mémoire partagée — ce que les atomes de Tamashii rendent possible.
+*Ce que la science en dit* : la [mémoire collective](https://en.wikipedia.org/wiki/Collective_memory) ([Halbwachs, 1925](https://en.wikipedia.org/wiki/Maurice_Halbwachs)) postule que les souvenirs ne survivent pas par l'individu seul, mais par les cadres collectifs qui les portent. Transmission, partage, inscription dans une mémoire partagée — ce que les atomes de Tamashii rendent possible.
 
 ---
 
@@ -81,7 +81,7 @@ Je partage ses victoires. Je suis autant dans le jeu que lui.
 J'ai vécu l'expérience de Furi en acceptant mon incapacité à le faire,
 et en partageant l'expérience du jeu avec mon fils.
 
-*Ce que la science en dit* : l'apprentissage situé (Lave & Wenger, 1991) décrit cette forme d'apprentissage par participation périphérique légitime — le novice se place en bord de l'activité, observe, partage, et par cette proximité, apprend. Pas par transmission directe. Par présence.
+*Ce que la science en dit* : l'[apprentissage situé](https://en.wikipedia.org/wiki/Situated_learning) ([Lave & Wenger, 1991](https://en.wikipedia.org/wiki/Jean_Lave)) décrit cette forme d'apprentissage par participation périphérique légitime — le novice se place en bord de l'activité, observe, partage, et par cette proximité, apprend. Pas par transmission directe. Par présence.
 
 *Ça, c'est l'apprentissage. Pas la performance — la transmission.*
 

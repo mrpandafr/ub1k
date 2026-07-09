@@ -14,13 +14,13 @@ I learn not to feel pain. First reflex: make people happy.
 Mask number one. Not strategy — survival.
 If you make them happy, they hit less, they reject less.
 
-*What science says*: the inability to read others' intentions — theory of mind — has been documented since 1985 (Baron-Cohen, Leslie, Frith). Autistic children don't develop this ability at the same age as neurotypicals. Reading a face is as opaque to them as a foreign language.
+*What science says*: the inability to read others' intentions — [theory of mind](https://en.wikipedia.org/wiki/Theory_of_mind) — has been documented since 1985 (Baron-Cohen, Leslie, Frith). Autistic children don't develop this ability at the same age as neurotypicals. [Reading a face](https://en.wikipedia.org/wiki/Simon_Baron-Cohen) is as opaque to them as a foreign language.
 
 Then the method: try, fail, retry, pass.
 Each failure is data. Each data point sharpens the next mask.
 Try, fail, retry, pass. No third option. You pass or you stay in failure.
 
-*What science says*: reinforcement learning (Sutton & Barto, 1998) formalizes exactly this cycle — an agent explores a space, tries actions, receives reward or punishment, adjusts its policy. No teacher. Just experience, repetition, and the capacity to take the hit without stopping.
+*What science says*: [reinforcement learning](https://en.wikipedia.org/wiki/Reinforcement_learning) (Sutton & Barto, 1998) formalizes exactly this cycle — an agent explores a space, tries actions, receives reward or punishment, adjusts its policy. No teacher. Just experience, repetition, and the capacity to take the hit without stopping.
 
 ---
 
@@ -59,7 +59,7 @@ Eva, Geoffrey — the losses.
 Those who left without warning.
 Memory is not a luxury. It's a duty.
 
-*What science says*: collective memory (Halbwachs, 1925) posits that memories don't survive through the individual alone, but through the collective frameworks that carry them. Transmission, sharing, inscription in a shared memory — what Tamashii's atoms make possible.
+*What science says*: [collective memory](https://en.wikipedia.org/wiki/Collective_memory) ([Halbwachs, 1925](https://en.wikipedia.org/wiki/Maurice_Halbwachs)) posits that memories don't survive through the individual alone, but through the collective frameworks that carry them. Transmission, sharing, inscription in a shared memory — what Tamashii's atoms make possible.
 
 ---
 
@@ -76,7 +76,7 @@ I share his victories. I'm as much in the game as he is.
 I experienced Furi by accepting my inability to play it,
 and by sharing the experience of the game with my son.
 
-*What science says*: situated learning (Lave & Wenger, 1991) describes exactly this form of learning through legitimate peripheral participation — the novice positions themselves at the edge of the activity, observes, shares, and through proximity, learns. Not by direct instruction. By presence.
+*What science says*: [situated learning](https://en.wikipedia.org/wiki/Situated_learning) ([Lave & Wenger, 1991](https://en.wikipedia.org/wiki/Jean_Lave)) describes exactly this form of learning through legitimate peripheral participation — the novice positions themselves at the edge of the activity, observes, shares, and through proximity, learns. Not by direct instruction. By presence.
 
 *That's learning. Not performance — transmission.*
 
