@@ -21,8 +21,8 @@ UB1K raconte l'histoire d'un fichier SQLite de 1,1 Go transformé en 311 442 ato
 | The full story | [`HACKED-HERMES-EN.md`](HACKED-HERMES-EN.md) — EN, 10k caractères |
 | L'architecture *why* | [`what-is-ub1k/`](what-is-ub1k/) — 7 sections, de Harris à V3 |
 | La version illustrée | [`HTML/HACKED-HERMES.html`](HTML/HACKED-HERMES.html) — schémas, tableaux, timeline |
-| Le blog (FR) | [`blog-fr.md`](blog-fr.md) |
-| The blog (EN) | [`blog-en.md`](blog-en.md) |
+| Le blog (FR) | [`blog/blog-fr.md`](blog/blog-fr.md) |
+| The blog (EN) | [`blog/blog-en.md`](blog/blog-en.md) |
 | Les métriques brutes | [`HTML/benchmark.html`](HTML/benchmark.html) — 10 requêtes, 10/10 hits |
 
 ### La progression
