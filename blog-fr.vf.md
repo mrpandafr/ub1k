@@ -130,9 +130,11 @@ Le vivant, ce ne sont pas les organismes. Ce sont les données. Les conversation
 
 ### 6.5 Réflexion
 
-Vivre une expérience sans en être l'acteur principal — Furi me l'a appris, le balcon avec Sarah me l'a montré. La transmission est plus profonde que la performance. Un enfant qui joue m'a appris plus sur l'apprentissage que des années de théorie.
+Quand on fait des statistiques, il n'y a pas de zone vide. Chaque cellule est remplie — et si une valeur manque, c'est un calcul qui la reconstruit. Personne ne voit le vide initial. Tout le monde voit le résultat. La surface est pleine, la mécanique est invisible.
 
-Le code qu'on laisse sans signature — comme les ressorts du père — tient parce qu'il est bien fait, pas parce qu'on l'a signé. Les 311 442 atomes sont cette transmission. Pas une archive. Pas un produit. Une trace de vie qui peut être reprise, enrichie, transmise — sans moi, sans toi, sans personne en particulier.
+C'est exactement ce que fait la mémoire vectorielle : elle comble les silences, elle relie les points, elle rend visible ce qui n'était pas explicité. L'utilisateur ne voit pas le kNN qui tourne, le embedding qui se calcule, le filtre Synapse qui s'applique. Il voit un résultat qui semble naturel.
+
+Le code qu'on laisse sans signature — comme les ressorts du père — tient parce qu'il est bien fait, pas parce qu'on l'a signé. Les 311 442 atomes sont cette transmission : une mécanique invisible qui comble les vides et rend la mémoire fluide. Pas une archive. Pas un produit. Une trace de vie qui peut être reprise, enrichie, transmise — sans moi, sans toi, sans personne en particulier.
 
 C'est la seule chose qui compte.
 
