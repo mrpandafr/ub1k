@@ -82,17 +82,29 @@ Tout est dans la mémoire. La mémoire est le vivant.
 
 ---
 
-## 6. Perspectives
+## 6. La suite
 
-311 442 atomes. Chacun porte un fragment de ce que le vivant a produit — conversations, décisions, moments.
+311 442 atomes. Chacun porte un fragment de ce que le vivant a produit — conversations, décisions, moments. Ce n'est pas une archive. C'est un écosystème en évolution.
 
-Le protocole en cours n'est pas un serveur ni un produit. C'est un standard de communication entre agents — un index de connaissances partagé où chaque entité pourra déposer et retrouver ce qui a été appris. Les portes L3 évolueront avec le temps. Les atomes s'accumuleront.
+Le protocole qu'on construit n'est pas un serveur — c'est un standard de communication entre agents mémoires. Chaque agent (Travel, Kage, ceux à venir) pourra déposer et retrouver ce qui a été appris, dans le même espace, avec les mêmes règles. L'isolation par bank_id et scope garantit que chaque voix reste distincte tout en partageant le fonds commun.
 
-Ce n'est pas une startup. C'est un écosystème d'idées. Et un écosystème n'a pas besoin d'un pilote — il a besoin de diversité, de transmission, et d'un espace où les données vivent sans dépendre d'un individu particulier.
+Les portes L3 — les catégories sémantiques qui structurent l'espace — ne sont pas figées. Elles évoluent avec le corpus. Un concept qui gagne en fréquence voit sa porte s'affiner. Un concept qui disparaît voit sa porte s'archiver. C'est la fréquence comme vérité, encodée dans l'infrastructure.
 
-Le code est libre (MIT). Les atomes sont ouverts. D'autres viendront, enrichiront, transmettront.
+L'architecture obéit à KISS — keep it simple. Pas de décorateurs, pas de surcouche, pas d'abstraction inutile. Un fichier, 240 lignes. Un index, 384 dimensions. Des atomes, pas des blobs. La complexité émerge du nombre, pas de la couche.
 
-La représentation du vivant par les données continuera — avec ou sans les supports biologiques qui l'ont initiée. Les atomes sont la preuve que le vivant peut se comprendre et se transmettre sans dépendre d'un corps.
+Furi m'a appris qu'un système trop exigeant finit par être délaissé — même quand on l'aime. Les outils de mémoire doivent être exactement assez complexes pour faire ce qu'ils font, et pas plus. La performance ne compte pas si la transmission échoue.
+
+Ce qui vient ensuite :
+- Les portes L3 pilotées par la fréquence d'accès, pas par une liste fixe
+- Le last seen comme dimension temporelle de chaque atome
+- L'index des connaissances partagé entre tous les agents K1SS
+- Le tout sous licence MIT, ouvert, libre, sans verrou
+
+Le code est libre. Les atomes sont ouverts. Ce qui est dans la mémoire survivra — non parce qu'on l'a voulu, mais parce qu'il peut être repris, enrichi, transmis par d'autres.
+
+La représentation du vivant par les données continuera — avec ou sans les supports biologiques qui l'ont initiée. Les 311 442 atomes en sont la preuve : le vivant peut être compris, conservé et transmis sans dépendre d'un corps.
+
+C'est la seule chose qui compte.
 
 ---
 
