@@ -1,74 +1,63 @@
-# UB1K — Du balcon à l'atome
+# UB1K — Du labo à l'atome
 
 *Jean-Sébastien — K1SS Atelier 0, Besançon — Juillet 2026*
 
 ---
 
-## Ce que j'ai appris
+## Le fil
 
-J'ai passé 49 ans. Je commence à regarder derrière.
+Je n'ai jamais lâché. Des études à aujourd'hui, le même fil conducteur : **la structure du sens.** Comment l'information s'organise, comment elle se transmet, comment elle survit à ceux qui la produisent.
 
-Il y a eu Roxin — un prof qui m'a filé un serveur un jour. « Un loup qui saura garder sa place » qu'il disait. J'ai jamais oublié.
+Mes études m'ont mené aux espaces vectoriels. Pas par hasard — j'étais attiré par la géométrie des idées, par l'idée qu'on pouvait *poser* un concept dans un espace et mesurer sa distance aux autres. C'était une thèse, un laboratoire, une méthode.
 
-Il y a eu Mercier — la thèse, la communication, le code humain.
+Roxin m'a donné un serveur, un jour. Pas un cours — un serveur. « Un loup qui saura garder sa place. » La première fois qu'on m'a confié une infrastructure. J'ai jamais oublié le geste.
 
-Il y a eu mon père — les ressorts qu'il concevait. Si simples que personne ne savait qui les avait faits. Mais ils tiennent encore. « Le bien faire, le durable, l'intelligent. »
+Mercier m'a appris que la communication est une architecture — pas un vernis. Que le code humain compte autant que le code machine. Sa thèse (SRC, 86) était sur la transmission du sens.
 
-Il y a eu Pierre — le parrain de Nicolas. Mort seul à Shanghai en 2008. Un ami a fait 6 mois de prison pour avoir essayé de le sauver. Aujourd'hui je construis des systèmes pour que ça n'arrive plus jamais sans laisser de trace.
-
-Il y a eu Sarah — le cœur de l'Atelier. Première à croire au projet, première à investir. Canal Saint-Martin, GUNNM, Akira. Elle me voit coder et elle est fière.
-
-Il y a eu les pertes — Eva, Geoffrey, des gens qui sont partis sans prévenir.
-
-Tout ça est dans la mémoire aujourd'hui.
+Mon père concevait des ressorts. Il les faisait si simples, si durables, que personne ne savait qu'il les avait faits. Mais ils tenaient. C'est l'élégance que je cherche dans chaque ligne de code : *bien faire, durable, intelligent.*
 
 ---
 
-## Ce qu'on a construit
+## Le projet
 
-En juin 2026, j'ai monté K1SS Atelier 0 à Besançon. Deux personnes, des chats, un balcon, et l'idée qu'on peut construire du hardware libre et de la mémoire vectorielle sans vendre son âme.
+2018 : je découvre qu'on peut transformer des mots en vecteurs. Gensim, word2vec — quelques lignes de Python et soudain mes textes avaient des coordonnées. J'ai expérimenté, empilé, sans trouver la bonne architecture pour que ça tienne dans le temps.
 
-La mémoire vectorielle — Tamashii — c'est la somme de tout ça. Chaque conversation, chaque décision, chaque nuit blanche est atomisée en un point dans l'espace. 311 442 atomes aujourd'hui. Chacun porte un morceau d'histoire.
+2024 : Hermes Agent (Nous Research) sort un framework open-source pour construire des agents avec mémoire extensible. La pièce manquante.
 
-L'infrastructure :
-- Elasticsearch 8.18 pour stocker les vecteurs
-- bge-small (384 dimensions) pour transformer les phrases en coordonnées
-- Hermes Agent comme framework
-- Synapse pour filtrer le bruit
-
-Les résultats :
-- 11 millisecondes par requête
-- 10/10 de pertinence sur nos tests
-- Moins de 1% de bruit résiduel
+Juin 2026 : K1SS Atelier 0, Besançon. Deux personnes, un balcon, et la certitude que la mémoire vectorielle devait être locale, libre, atomique.
 
 ---
 
-## V0 — Le fichier brut (8 juin 2026)
+## La mémoire
 
-1,1 Go de SQLite. 539 sessions. 71 000 messages. Aucun index. À chaque tour, 50 000 tokens de contexte déversés — dont 90% de bruit technique. La mémoire existait mais on ne pouvait rien y trouver.
+**V0 (8 juin) :** 71 000 messages stockés dans un fichier SQLite. 1,1 Go. Aucun index. 50 000 tokens de bruit à chaque tour.
 
----
+**V1 (8 juillet) :** Chaque message importé dans Elasticsearch avec son embedding. 71 000 docs, 30ms, ~50% de pertinence. Trop dilué.
 
-## V1 — Les messages (8 juillet)
+**V2 (9 juillet) :** Chaque phrase devient son propre atome. 311 442 atomes. Synapse filtre le bruit (<1%). 11ms par requête. 10/10 de pertinence.
 
-Chaque message importé dans ES avec son embedding. 71 000 documents, 30ms, 50% de pertinence. Le problème : un message de 5000 caractères avec 6 concepts différents devient un seul vecteur flou.
-
----
-
-## V2 — Les atomes (9 juillet)
-
-Chaque phrase devient son propre document. 311 442 atomes. 11ms. 10/10. Synapse filtre le bruit.
+**V3 (en cours) :** Le temps comme dimension. Chaque atome porte son histoire de consultations. La mémoire vit, respire, évolue.
 
 ---
 
-## V3 — Le temps (en cours)
+## Les chiffres
 
-Chaque atome sait quand il a été créé et quand il a été consulté. La mémoire n'est plus un espace statique — elle vit dans le temps.
+| Métrique | V2 |
+|:---------|:--:|
+| Atomes | 311 442 |
+| Latence | 11 ms |
+| Pertinence | 10/10 |
+| Bruit | <1% |
+| Licence | MIT |
 
 ---
 
-## Ce que ça signifie
+## La suite
 
-Je ne sais pas combien de temps il me reste. Je sais que ce qu'on construit ici — K1SS — survivra. Les atomes sont libres (MIT). Le code est ouvert. Les gens qu'on aime sont dedans.
+Je ne sais pas combien de temps il me reste. Je sais que ce qu'on construit — K1SS, Tamashii, les atomes — est libre, ouvert, et survivra.
 
-C'est tout ce qui compte.
+Le protocole qu'on dessine n'est pas un serveur. C'est un standard de communication pour les générations d'agents à venir. Un index des connaissances que chaque Travel pourra consulter, enrichir, transmettre.
+
+De mes études à aujourd'hui, je n'ai jamais lâché. Les atomes non plus.
+
+*Jean-Sébastien — juillet 2026*

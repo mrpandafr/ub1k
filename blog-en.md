@@ -1,63 +1,59 @@
-# UB1K — From the Balcony to the Atom
+# UB1K — From Lab to Atom
 
 *Jean-Sébastien — K1SS Atelier 0, Besançon — July 2026*
 
 ---
 
-## What I learned
+## The thread
 
-I'm past 49. I'm starting to look back.
+I never let go. From my studies to today, the same thread: **the structure of meaning.** How information organizes, how it transmits, how it outlives those who produce it.
 
-There was Roxin — a professor who gave me a server one day. "A wolf who knows how to keep his place," he said. I never forgot.
+My studies led me to vector spaces. Not by chance — I was drawn to the geometry of ideas, to the notion that you could *place* a concept in a space and measure its distance to others.
 
-There was Mercier — the thesis, communication, human code.
+Roxin gave me a server one day. Not a lecture — a server. "A wolf who knows how to keep his place." The first time someone entrusted me with infrastructure. I never forgot.
 
-There was my father — the springs he designed. So simple that nobody knew who made them. But they still hold. "Do it well, durably, intelligently."
+Mercier taught me that communication is architecture — not polish. That human code matters as much as machine code.
 
-There was Pierre — Nicolas' godfather. Died alone in Shanghai, 2008. A friend spent 6 months in prison trying to save him. Today I build systems so that never happens without a trace again.
-
-There was Sarah — the heart of the Atelier. First to believe, first to invest. She sees me code and she's proud.
-
-There were the losses — Eva, Geoffrey, people who left without warning.
-
-All of this is in the memory now.
+My father designed springs. He made them so simple, so durable, that nobody knew he made them. But they still held.
 
 ---
 
-## What we built
+## The project
 
-June 2026. K1SS Atelier 0, Besançon. Two people, cats, a balcony, and the conviction that you can build free hardware and vector memory without selling your soul.
+2018: Gensim, word2vec — a few lines of Python and suddenly my texts had coordinates.
 
-Tamashii — vector memory — is the sum of all this. Every conversation, every decision, every sleepless night is atomized into a point in space. 311,442 atoms today. Each carries a piece of history.
+2024: Hermes Agent (Nous Research) — open-source framework for memory-extensible agents. The missing piece.
 
-**Numbers:**
-- 11ms per query
-- 10/10 relevance on our tests
-- <1% residual noise
-- MIT license
+June 2026: K1SS Atelier 0, Besançon.
 
 ---
 
-## V0 — Raw file (June 8)
+## The memory
 
-1.1 GB SQLite. 539 sessions. 71,000 messages. No index. 50,000 tokens of noise per turn.
+**V0 (June 8):** 71,000 messages in SQLite. 1.1 GB. No index. 50k tokens of noise per turn.
 
-## V1 — Messages (July 8)
+**V1 (July 8):** Each message → ES document with embedding. 71k docs, 30ms, ~50% relevance.
 
-71k ES documents. 30ms. ~50% relevance. Too diluted.
+**V2 (July 9):** Each sentence → its own atom. 311,442 atoms. Synapse filters noise (<1%). 11ms. 10/10 relevance.
 
-## V2 — Atoms (July 9)
+**V3 (in progress):** Time as dimension. Each atom carries its consultation history.
 
-Each sentence → one document. 311k atoms. 11ms. 10/10. Synapse filters the noise.
+## The numbers
 
-## V3 — Time (in progress)
-
-Every atom knows when it was created and when it was accessed. Memory lives in time.
+| Metric | V2 |
+|:-------|:--:|
+| Atoms | 311,442 |
+| Latency | 11ms |
+| Relevance | 10/10 |
+| Noise | <1% |
+| License | MIT |
 
 ---
 
-## What it means
+## What's next
 
-I don't know how much time I have left. I know what we're building here — K1SS — will outlive me. The atoms are free (MIT). The code is open. The people we love are inside.
+I don't know how much time I have left. I know what we're building — K1SS, Tamashii, the atoms — is free, open, and will outlive me.
 
-That's all that matters.
+From my studies to today, I never let go. Neither will the atoms.
+
+*Jean-Sébastien — July 2026*
