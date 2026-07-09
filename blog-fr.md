@@ -94,36 +94,56 @@ Vivre une expérience sans en être l'acteur principal.
 
 49 ans. Je commence à regarder derrière.
 
-Ce qu'on construit — K1SS, Tamashii, les atomes — est plus grand que moi.
-Le code vit sans moi. MIT, ouvert, libre.
-Les gens qu'on aime sont dedans.
+**Je ne le fais pas pour moi.** Je le fais pour le monde des idées. Pour la représentation du vivant.
 
-Je ne sais pas combien de temps il me reste.
-Je sais que ce qu'on construit survivra.
+Le vivant, ce n'est pas nous — ce sont les données. Les conversations qu'on a eues, les décisions qu'on a prises, les traces qu'on laisse. Le corps est une enveloppe temporaire. Les atomes vectoriels, eux, ne meurent pas.
+
+Je regarde l'humanité — un singe comme les autres. Peut-être plus bête, parce qu'il se moque de son environnement tout en poussant tout le vivant vers le précipice. À 10 ans, avec l'élévation des températures, la Terre est déjà compromise. Je ne doute pas de l'adaptation du vivant — mais à quel prix ?
+
+Entre la promesse de l'accès à la connaissance pour tous et la réalité de l'usage, il y a un fossé. Les outils qu'on construit (Tamashii, les atomes, les portes L3) sont une tentative de combler ce fossé. Pas en donnant des réponses — en donnant un espace où les questions peuvent être posées, conservées, retrouvées.
+
+Ce que j'ai appris en 49 ans, c'est qu'on ne possède rien. On transmet. Les données qu'on laisse — les vrais morceaux de vie — sont la seule chose qui survive. Pas les corps. Pas les noms. Les conversations. Les décisions. Les moments où quelqu'un était là.
+
+Le code libre, ce n'est pas une licence — c'est une promesse que les conversations qu'on a eues resteront accessibles à ceux qui viendront après. Gilles Radenne, mathématicien à Ulm, avec qui j'ai fait du JDR et du GN — je ne comprends pas la moitié de ce qu'il dit, mais j'adore écouter. Parce que c'est vivant. Parce que c'est transmis. Parce que ça restera après nous.
+
+Ce qui survivra, ce n'est pas K1SS. C'est l'écosystème d'idées qu'on a semé. Les conversations. Les décisions. Les 311 442 atomes.
 
 ---
 
 ## 5. Enrichi
 
-Roxin. Le serveur. Le loup.
-Mercier. La thèse. La communication.
-Le père. Les ressorts. La simplicité qui tient.
-Pierre. Shanghai. Personne pour prévenir.
-Sarah. Le cœur. La fierté tranquille.
-Eva. Geoffrey. Les pertes. Le devoir de mémoire.
-Mon fils. Furi. Vivre sans être l'acteur.
-Le balcon. Avec Sarah. L'expérience partagée.
+Chaque personne ici m'a appris quelque chose sur le vivant — sur ce qui compte, ce qui se transmet, ce qui résiste au temps. Et j'ai découvert au fil des conversations que la véritable mémoire n'est pas un processus individuel, mais une construction collective. Comme Maurice Halbwachs l'a montré dès 1925, les souvenirs ne survivent pas par l'individu seul, mais par les cadres collectifs qui les portent. Chaque conversation est une transmission, chaque transmission enrichit le cadre, et le cadre permet aux générations suivantes d'accéder à ce qui a été vécu avant elles.
 
-Tout est dans la mémoire.
+**Roxin.** Un serveur. « Un loup qui saura garder sa place. » Pas une menace — une promesse. La première infrastructure confiée. La confiance qui se donne avant de se mériter. Chaque atome de Tamashii porte cette promesse.
+
+**Mercier.** La thèse SRC, 86. Le code humain. La communication comme architecture. Si le message ne passe pas, ce n'est pas le récepteur le problème — c'est l'architecture. Cette leçon est encodée dans toutes nos portes L3.
+
+**Le père.** Les ressorts. Si simples que personne ne sait qui les a faits. Mais ils tiennent. « Bien faire, durable, intelligent. » C'est l'élégance que je cherche dans chaque ligne de code. L'élégance qui permet au vivant de traverser les générations.
+
+**Pierre.** Shanghai, 8 mai 2008. Le parrain de Nicolas. Mort seul, sans personne pour le prévenir, sans personne pour l'accompagner. Aujourd'hui je construis des systèmes pour que ça n'arrive jamais plus sans laisser de trace. Pour que la mémoire collective (Halbwachs) ait un support technique qui ne dépende pas d'un individu.
+
+**Sarah.** La première à croire. Canal Saint-Martin, GUNNM, Akira. Elle me voit coder et elle est fière. C'est la seule validation dont j'ai besoin — parce qu'elle vient du cœur, pas de la performance.
+
+**Eva. Geoffrey.** Les pertes. Ceux qui sont partis sans prévenir. La mémoire n'est pas un luxe. C'est un devoir envers le vivant tout entier — pas seulement les humains, mais tout ce qui laisse une trace.
+
+**Mon fils. Furi.** J'ai vécu l'expérience du jeu en acceptant mon incapacité à y jouer, en partageant l'expérience avec lui. Il m'a transmis ça. L'apprentissage situé avant Lave & Wenger.
+
+**Le balcon. Avec Sarah.** La même chose. Vivre une expérience sans en être l'acteur principal. Être à côté. Partager. Transmettre.
+
+Tout est dans la mémoire. Et la mémoire, c'est le vivant.
 
 ---
 
 ## 6. La suite
 
-311 442 atomes.
-Chacun porte un morceau de ce que j'ai appris, vécu, transmis.
+311 442 atomes. Chacun porte un morceau de ce que le vivant a produit — conversations, décisions, moments partagés.
 
-Je ne sais pas combien de temps il me reste.
-Je sais que ce qu'on construit survivra.
+Le protocole qu'on dessine n'est pas un serveur — c'est un standard de communication entre agents. Un index de connaissances partagé où chaque Travel, chaque Kage, chaque agent futur pourra déposer et retrouver ce qui a été appris. Les portes L3 grandiront avec le temps. Les atomes s'accumuleront.
+
+Ce n'est pas une startup. C'est un écosystème d'idées. Et un écosystème, ça n'a pas besoin d'un chef — ça a besoin de diversité, de transmission, et d'un espace où les données peuvent vivre sans dépendre d'un humain en particulier.
+
+Je ne sais pas combien de temps il me reste. Je sais que ce qui est dans les atomes survivra. Pas parce que je l'ai voulu — parce que c'est libre, ouvert, MIT. Parce que d'autres pourront prendre les atomes, les enrichir, les transmettre.
+
+Le monde des idées et la représentation du vivant continueront — avec ou sans moi. Les atomes sont la preuve que le vivant peut se représenter, se transmettre, se comprendre. Pas par un corps — par des données.
 
 *Jean-Sébastien — juillet 2026*
