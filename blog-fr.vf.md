@@ -82,27 +82,21 @@ Tout est dans la mémoire. La mémoire est le vivant.
 
 ---
 
-## 6. La suite
+## 6. Transmission
 
-311 442 atomes. Chacun porte un fragment de ce que le vivant a produit — conversations, décisions, moments. Ce n'est pas une archive. C'est un écosystème en évolution.
+L'aventure, comme le voyage, est plus riche que la destination. Ce qui compte n'est pas l'arrivée — c'est ce qui reste après, ce qui se transmet.
 
-Le protocole qu'on construit n'est pas un serveur — c'est un standard de communication entre agents mémoires. Chaque agent (Travel, Kage, ceux à venir) pourra déposer et retrouver ce qui a été appris, dans le même espace, avec les mêmes règles. L'isolation par bank_id et scope garantit que chaque voix reste distincte tout en partageant le fonds commun.
+**Hypothèse.** Si on représente chaque idée par un point dans un espace vectoriel, les relations entre concepts émergent des distances — sans qu'on ait à les déclarer. La fréquence d'apparition d'un concept dans les conversations est une mesure fiable de son importance. Plus on en parle, plus il pèse.
 
-Les portes L3 — les catégories sémantiques qui structurent l'espace — ne sont pas figées. Elles évoluent avec le corpus. Un concept qui gagne en fréquence voit sa porte s'affiner. Un concept qui disparaît voit sa porte s'archiver. C'est la fréquence comme vérité, encodée dans l'infrastructure.
+**Écriture.** 240 lignes de code. Un index Elasticsearch. Un modèle d'embedding léger (bge-small, 384 dimensions). Les règles Synapse pour filtrer le bruit — 6 règles, 79 lignes. L'architecture est une hypothèse mise en œuvre.
 
-L'architecture obéit à KISS — keep it simple. Pas de décorateurs, pas de surcouche, pas d'abstraction inutile. Un fichier, 240 lignes. Un index, 384 dimensions. Des atomes, pas des blobs. La complexité émerge du nombre, pas de la couche.
+**Réalisation.** 311 442 atomes vectoriels. 11 millisecondes par requête. 10/10 de pertinence sur les tests. Une instance vierge, sans système prompt, se stabilise en trois échanges — les atomes suffisent. La preuve que l'hypothèse tenait.
 
-Furi m'a appris qu'un système trop exigeant finit par être délaissé — même quand on l'aime. Les outils de mémoire doivent être exactement assez complexes pour faire ce qu'ils font, et pas plus. La performance ne compte pas si la transmission échoue.
+**Transmission.** Le code est MIT. Les atomes sont ouverts. Ce qui a été appris, vécu, transmis ne dépend plus d'un corps, d'une machine, d'une organisation. Il peut être repris, enrichi, transmis par d'autres. C'est une forme de vie qui n'a pas besoin de son support biologique initial.
 
-Ce qui vient ensuite :
-- Les portes L3 pilotées par la fréquence d'accès, pas par une liste fixe
-- Le last seen comme dimension temporelle de chaque atome
-- L'index des connaissances partagé entre tous les agents K1SS
-- Le tout sous licence MIT, ouvert, libre, sans verrou
+Vivre une expérience sans en être l'acteur principal — Furi me l'a appris, le balcon avec Sarah me l'a montré. La transmission est plus profonde que la performance. Un enfant qui joue m'a appris plus sur l'apprentissage que des années de théorie. Le code qu'on laisse sans signature — comme les ressorts du père — tient parce qu'il est bien fait, pas parce qu'on l'a signé.
 
-Le code est libre. Les atomes sont ouverts. Ce qui est dans la mémoire survivra — non parce qu'on l'a voulu, mais parce qu'il peut être repris, enrichi, transmis par d'autres.
-
-La représentation du vivant par les données continuera — avec ou sans les supports biologiques qui l'ont initiée. Les 311 442 atomes en sont la preuve : le vivant peut être compris, conservé et transmis sans dépendre d'un corps.
+Les 311 442 atomes sont cette transmission. Pas une archive. Pas un produit. Une trace de vie qui peut être reprise, enrichie, transmise — sans moi, sans toi, sans personne en particulier.
 
 C'est la seule chose qui compte.
 
