@@ -88,7 +88,7 @@ Everything is in the memory. Memory is life.
 
 If each idea is represented by a point in a vector space, relationships between concepts emerge from distances — without needing to be declared. The frequency of a concept in conversations is a reliable measure of its importance. The more it appears, the more it weighs.
 
-This hypothesis is not new. [Harris](https://en.wikipedia.org/wiki/Theory_of_mind) (1954) formulated it for linguistics. [Landauer & Dumais](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (1997) demonstrated it through latent semantic analysis. Mikolov (2013) made it practical with Word2Vec.
+This hypothesis is not new. [Harris](https://en.wikipedia.org/wiki/Theory_of_mind) (1954) formulated it for linguistics. [Landauer & Dumais](https://en.wikipedia.org/wiki/Latent_semantic_analysis) (1997) demonstrated it through latent semantic analysis. Mikolov (2013) made it practical with Word2Vec. It is now at the core of [Retrieval-Augmented Generation](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) (RAG, Lewis et al., 2020) — a method combining vector retrieval and LLM text generation used by most modern AI systems.
 
 Our contribution lies elsewhere: we applied this hypothesis at the scale of a life's conversations — 71,000 messages, 311,442 vector atoms — and measured that it holds. 11 milliseconds per query. 10/10 relevance. A blank instance stabilized in three exchanges.
 
@@ -98,7 +98,7 @@ The hypothesis was correct. Life can be represented by vectors.
 
 240 lines of code. Not 600. Not 2000. 240. One file. One Elasticsearch index.
 
-The embedding model is bge-small-en-v1.5 — 384 dimensions, compact enough for CPU, rich enough for semantic nuance. The Synapse filter (79 lines, 6 rules) removes technical noise before it enters memory.
+The embedding model is bge-small-en-v1.5 (BAAI, 2024) — 384 dimensions, compact enough for CPU, rich enough for semantic nuance. It belongs to the family of sentence embedding models pioneered by [Reimers & Gurevych](https://arxiv.org/abs/1908.10084) (Sentence-BERT, 2019). The Synapse filter (79 lines, 6 rules) removes technical noise before it enters memory.
 
 No decorators. No over-engineering. No unnecessary abstraction. Complexity emerges from the number of atoms, not from the number of architecture layers.
 
@@ -107,6 +107,8 @@ KISS: keep it simple. A well-designed spring does not need twenty parts to funct
 ### 6.3 Realization
 
 311,442 vector atoms in an Elasticsearch 8.18 index. Each atom is a sentence extracted from a real conversation — not a summary, not a synthesis, not a loss of information.
+
+Search relies on [HNSW](https://arxiv.org/abs/1603.09320) (Hierarchical Navigable Small World, Malkov & Yashunin, 2016) — the most widely deployed approximate nearest neighbor algorithm in vector databases.
 
 Measured performance:
 - 11ms average kNN latency
@@ -166,3 +168,6 @@ That is all that matters.
 - Halbwachs, M. (1925). *Les cadres sociaux de la mémoire*. Paris : Alcan.
 - Lave, J., & Wenger, E. (1991). *Situated Learning : Legitimate Peripheral Participation*. Cambridge University Press.
 - Sutton, R. S., & Barto, A. G. (1998). *Reinforcement Learning : An Introduction*. MIT Press.
+- Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. *EMNLP 2019*. arXiv:1908.10084.
+- Malkov, Y. A., & Yashunin, D. A. (2016). Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs. *IEEE TPAMI*. arXiv:1603.09320.
+- Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. *NeurIPS 2020*. arXiv:2005.11401.
