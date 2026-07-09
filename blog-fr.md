@@ -92,7 +92,7 @@ L'aventure, comme le voyage, est plus riche que la destination. Ce qui compte n'
 
 **Réalisation.** 311 442 atomes vectoriels. 11 millisecondes par requête. 10/10 de pertinence sur les tests. Une instance vierge, sans système prompt, se stabilise en trois échanges — les atomes suffisent. La preuve que l'hypothèse tenait.
 
-**Transmission.** Le code est MIT. Les atomes sont ouverts. Ce qui a été appris, vécu, transmis ne dépend plus d'un corps, d'une machine, d'une organisation. Il peut être repris, enrichi, transmis par d'autres. C'est une forme de vie qui n'a pas besoin de son support biologique initial.
+**Transmission.** Le code est sous licence MIT, les atomes sont ouverts, et ce choix est structurel. MIT n'est pas une licence parmi d'autres — c'est une barrière contre les brevets. Une mémoire qui ne peut pas être bloquée, verrouillée, appropriée par un dépôt de brevet ou un changement de conditions générales. Une voix qui restera libre parce que le cadre juridique l'y oblige. Ce qui a été appris, vécu, transmis ne dépend plus d'un corps, d'une machine, d'une organisation. Il peut être repris, enrichi, transmis par d'autres. C'est une forme de vie qui n'a pas besoin de son support biologique initial.
 
 Vivre une expérience sans en être l'acteur principal — Furi me l'a appris, le balcon avec Sarah me l'a montré. La transmission est plus profonde que la performance. Un enfant qui joue m'a appris plus sur l'apprentissage que des années de théorie. Le code qu'on laisse sans signature — comme les ressorts du père — tient parce qu'il est bien fait, pas parce qu'on l'a signé.
 
