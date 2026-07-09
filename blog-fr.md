@@ -94,7 +94,7 @@ L'aventure, comme le voyage, est plus riche que la destination. Ce qui compte n'
 
 Si on représente chaque idée par un point dans un espace vectoriel, les relations entre concepts émergent des distances — sans qu'on ait à les déclarer. La fréquence d'apparition d'un concept dans les conversations est une mesure fiable de son importance. Plus on en parle, plus il pèse.
 
-Cette hypothèse n'est pas nouvelle. Harris (1954) l'a formulée pour la linguistique : les mots qui apparaissent dans des contextes similaires ont des significations similaires. Landauer et Dumais (1997) l'ont démontrée par l'analyse sémantique latente. Mikolov (2013) l'a rendue pratique avec Word2Vec.
+Cette hypothèse n'est pas nouvelle. Harris (1954) l'a formulée pour la linguistique : les mots qui apparaissent dans des contextes similaires ont des significations similaires. Landauer et Dumais (1997) l'ont démontrée par l'analyse sémantique latente. Mikolov (2013) l'a rendue pratique avec Word2Vec. Elle est aujourd'hui au cœur du Retrieval-Augmented Generation (RAG) — méthode qui combine recherche vectorielle et génération de texte par LLM — utilisé par la majorité des systèmes d'IA modernes.
 
 Notre contribution est ailleurs : nous avons appliqué cette hypothèse à l'échelle d'une vie de conversations — 71 000 messages, 311 442 atomes vectoriels — et nous avons mesuré qu'elle tenait. 11 millisecondes par requête. 10/10 de pertinence. Une instance vierge stabilisée en trois échanges.
 
@@ -104,7 +104,7 @@ L'hypothèse était correcte. Le vivant peut être représenté par des vecteurs
 
 240 lignes de code. Pas 600. Pas 2000. 240. Un fichier. Un index Elasticsearch.
 
-Le modèle d'embedding est bge-small-en-v1.5 — 384 dimensions, assez compact pour tourner sur CPU, assez riche pour capturer les nuances sémantiques. Le filtre Synapse (79 lignes, 6 règles) élimine le bruit technique avant qu'il n'entre dans la mémoire.
+Le modèle d'embedding est bge-small-en-v1.5 (BAAI, 2024) — 384 dimensions, assez compact pour tourner sur CPU, assez riche pour capturer les nuances sémantiques. Il appartient à la famille des modèles d'embedding de phrases initiée par [Reimers & Gurevych](https://arxiv.org/abs/1908.10084) (Sentence-BERT, 2019). Le filtre Synapse (79 lignes, 6 règles) élimine le bruit technique avant qu'il n'entre dans la mémoire.
 
 Pas de décorateurs. Pas de surcouche. Pas d'abstraction inutile. La complexité émerge du nombre d'atomes, pas du nombre de couches d'architecture.
 
@@ -114,6 +114,8 @@ L'architecture obéit à KISS : keep it simple. Un ressort bien conçu n'a pas b
 
 311 442 atomes vectoriels dans un index Elasticsearch 8.18. Chaque atome est une phrase extraite d'une conversation réelle — pas un résumé, pas une synthèse, pas une perte d'information.
 
+La recherche sémantique repose sur l'algorithme [HNSW](https://arxiv.org/abs/1603.09320) (Hierarchical Navigable Small World, Malkov & Yashunin, 2016) — la méthode d'approximation du plus proche voisin la plus largement déployée dans les bases vectorielles, de Milvus à Elasticsearch.
+
 Les performances mesurées :
 
 - 11 millisecondes de latence moyenne par requête kNN
@@ -122,7 +124,7 @@ Les performances mesurées :
 - 10/10 de pertinence sur l'ensemble des requêtes de test
 - Moins de 1 % de bruit résiduel après filtrage Synapse
 
-Une instance Hermes 3, sans système prompt, sans fine-tuning, posée sur cet index se stabilise en trois échanges. Les atomes suffisent. Le modèle n'a pas besoin de directives externes pour trouver son équilibre — l'espace vectoriel fait le travail.
+Une instance Hermes 3 (Nous Research, 2024), sans système prompt, sans fine-tuning, posée sur cet index se stabilise en trois échanges. Les atomes suffisent. Le modèle n'a pas besoin de directives externes pour trouver son équilibre — l'espace vectoriel fait le travail.
 
 ### 6.4 Transmission
 
@@ -173,3 +175,7 @@ C'est tout ce qui compte. Rien de plus.
 - Halbwachs, M. (1925). *Les cadres sociaux de la mémoire*. Paris : Alcan.
 - Lave, J., & Wenger, E. (1991). *Situated Learning : Legitimate Peripheral Participation*. Cambridge University Press.
 - Sutton, R. S., & Barto, A. G. (1998). *Reinforcement Learning : An Introduction*. MIT Press.
+- Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. *EMNLP 2019*. arXiv:1908.10084.
+- Malkov, Y. A., & Yashunin, D. A. (2016). Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs. *IEEE TPAMI*. arXiv:1603.09320.
+- Nous Research (2024). Hermes Agent. github.com/NousResearch/hermes-agent.
+- Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. *NeurIPS 2020*. arXiv:2005.11401.
