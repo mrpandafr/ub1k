@@ -2,114 +2,356 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UB1K — Autiste, chercheur, artisan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+<title>UB1K — La voix des vecteurs</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.7; padding: 0; }
-  .container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
-  
-  /* Header */
-  .header { border-bottom: 1px solid #1a1a2e; padding-bottom: 1.5rem; margin-bottom: 2rem; }
-  .header h1 { font-size: 2.2rem; font-weight: 600; color: #a0f0d0; letter-spacing: -0.02em; }
-  .header .byline { color: #808090; font-size: 0.9rem; margin-top: 0.3rem; }
-  .header .tagline { color: #606070; font-size: 0.85rem; margin-top: 0.5rem; font-style: italic; }
-  
-  h2 { color: #80d0f0; font-size: 1.4rem; margin-top: 2.5rem; margin-bottom: 1rem; font-weight: 500; }
-  h3 { color: #c0a0f0; font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; font-weight: 500; }
-  
-  p { margin: 0.8rem 0; color: #d0d0e0; }
-  
-  /* Blockquote for science boxes */
-  .science { background: #0d0d1a; border-left: 3px solid #a0f0d080; padding: 0.8rem 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; font-size: 0.9rem; color: #b0c0d0; }
-  .science a { color: #80d0f0; text-decoration: none; }
-  .science a:hover { text-decoration: underline; }
-  
-  /* Blockquote for italics */
-  blockquote { border-left: 3px solid #606080; padding-left: 1rem; margin: 1rem 0; color: #9090a0; font-style: italic; }
-  
-  /* Histogram bars */
-  .histo { margin: 1.5rem 0; }
-  .histo-item { display: flex; align-items: center; margin-bottom: 0.35rem; gap: 0.5rem; }
-  .histo-label { min-width: 100px; font-size: 0.85rem; color: #a0a0b0; text-align: right; }
-  .histo-bar { height: 22px; border-radius: 4px; min-width: 4px; transition: width 0.3s; }
-  .histo-count { font-size: 0.75rem; color: #808090; min-width: 40px; }
-  
-  /* Diagram containers */
-  .diagram { background: #0d0d1a; border: 1px solid #1a1a2e; border-radius: 10px; padding: 1rem; margin: 1.5rem 0; overflow-x: auto; font-family: 'Consolas', 'Fira Code', monospace; font-size: 0.8rem; line-height: 1.35; color: #c0c0d0; white-space: pre; }
-  
-  /* V0-V3 evolution table */
-  .evo-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.85rem; }
-  .evo-table th { background: #0d0d1a; color: #80d0f0; padding: 0.5rem 0.75rem; text-align: left; font-weight: 500; border-bottom: 1px solid #1a1a2e; }
-  .evo-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #0d0d1a; }
-  .evo-table tr:hover td { background: #0f0f1a; }
-  .badge { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 500; }
-  .badge-v0 { background: #80202040; color: #f06060; }
-  .badge-v1 { background: #80602040; color: #f0c060; }
-  .badge-v2 { background: #20802040; color: #60f060; }
-  .badge-v3 { background: #20208040; color: #6060f0; }
-  
-  /* HR */
-  hr { border: none; border-top: 1px solid #1a1a2e; margin: 2rem 0; }
-  
-  /* Footer */
-  .footer { text-align: center; color: #606070; font-size: 0.8rem; padding: 2rem 0; border-top: 1px solid #1a1a2e; margin-top: 2rem; }
-  .footer a { color: #808090; text-decoration: none; }
-  
-  /* Responsive */
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #faf8f5;
+    color: #1a1a1a;
+    line-height: 1.8;
+    font-size: 19px;
+    padding: 0;
+  }
   @media (max-width: 600px) {
-    .container { padding: 1rem; }
-    .header h1 { font-size: 1.5rem; }
-    .histo-label { min-width: 70px; font-size: 0.75rem; }
+    body { font-size: 17px; line-height: 1.7; }
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  @media (max-width: 600px) {
+    .container { padding: 1rem 1rem; }
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    border-bottom: 2px solid #2a5c6e;
+    margin-bottom: 2.5rem;
+  }
+  @media (max-width: 600px) {
+    .header { padding: 2rem 0.5rem 1.5rem; }
+  }
+  .header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1a3a4a;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 1.6rem; }
+  }
+  .header .subtitle {
+    font-size: 0.95rem;
+    color: #5a7a8a;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+
+  /* Sections */
+  h2 {
+    font-size: 1.6rem;
+    color: #1a3a4a;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #d0d8de;
+    font-weight: 600;
+  }
+  @media (max-width: 600px) {
+    h2 { font-size: 1.3rem; }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: #2a5c6e;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+  }
+
+  p { margin: 0.9rem 0; }
+
+  .lead {
+    font-size: 1.05rem;
+    color: #2a4a5a;
+    font-style: italic;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border-left: 3px solid #2a5c6e;
+    background: #f0f4f8;
+    border-radius: 0 6px 6px 0;
+  }
+
+  /* Science boxes */
+  .science {
+    background: #f0f4f8;
+    border-left: 4px solid #2a5c6e;
+    padding: 0.8rem 1.2rem;
+    margin: 1.2rem 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.92rem;
+    color: #2a3a4a;
+  }
+  .science strong { color: #1a3a4a; }
+  .science a { color: #2a6c8e; text-decoration: underline; text-underline-offset: 2px; }
+  .science a:hover { color: #1a4a6e; }
+
+  /* Blockquote */
+  blockquote {
+    border-left: 3px solid #8aa0b0;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    color: #4a5a6a;
+    font-style: italic;
+    background: #f8fafc;
+    border-radius: 0 6px 6px 0;
+  }
+
+  /* ASCII diagrams — style monospace */
+  .diagram {
+    background: #1a1a2e;
+    color: #c0d0e0;
+    font-family: 'Courier New', 'Consolas', monospace;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    overflow-x: auto;
+    white-space: pre;
+  }
+  @media (max-width: 600px) {
+    .diagram { font-size: 0.65rem; padding: 0.7rem; }
+  }
+
+  /* Metrics table */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.6rem;
+    margin: 1.5rem 0;
+  }
+  .metric-card {
+    background: #f0f4f8;
+    border-radius: 8px;
+    padding: 0.7rem;
+    text-align: center;
+    border: 1px solid #dde4ea;
+  }
+  .metric-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a3a4a;
+  }
+  .metric-label {
+    font-size: 0.75rem;
+    color: #5a7a8a;
+    margin-top: 0.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Histogram */
+  .histo { margin: 1.5rem 0; }
+  .histo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    gap: 0.5rem;
+  }
+  .histo-label {
+    min-width: 80px;
+    font-size: 0.85rem;
+    color: #3a4a5a;
+    text-align: right;
+  }
+  .histo-bar {
+    height: 22px;
+    border-radius: 4px;
+    min-width: 6px;
+    transition: width 0.3s;
+  }
+  .histo-count {
+    font-size: 0.78rem;
+    color: #6a7a8a;
+    min-width: 35px;
+  }
+
+  /* Evolution table */
+  .evo-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.85rem; }
+  .evo-table th {
+    background: #1a3a4a;
+    color: #f0f4f8;
+    padding: 0.5rem 0.6rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .evo-table td { padding: 0.5rem 0.6rem; border-bottom: 1px solid #dde4ea; }
+  .evo-table tr:nth-child(even) td { background: #f8fafc; }
+
+  /* Network items */
+  .network-item {
+    padding: 0.6rem 0 0.6rem 1rem;
+    border-left: 3px solid #c0d0de;
+    margin: 0.6rem 0;
+  }
+  .network-item strong { color: #1a3a4a; }
+
+  /* Transmission steps */
+  .step { margin: 1rem 0; padding: 0.8rem; background: #f8fafc; border-radius: 8px; border: 1px solid #e0e6ec; }
+  .step h4 { color: #1a3a4a; margin-bottom: 0.3rem; font-size: 1rem; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    color: #6a7a8a;
+    font-size: 0.85rem;
+    padding: 2rem 0;
+    border-top: 2px solid #2a5c6e;
+    margin-top: 2.5rem;
+  }
+  .footer a { color: #2a5c6e; }
+
+  /* Conclusion boxes */
+  .pillar {
+    background: #f0f4f8;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #dde4ea;
+  }
+  .pillar strong { color: #1a3a4a; }
+
+  @media print {
+    body { font-size: 12pt; background: white; color: black; }
+    .diagram { background: #f0f0f0; color: #222; border: 1px solid #ccc; }
+    .header { border-color: #999; }
+    .science { background: #f5f5f5; }
   }
 </style>
 </head>
 <body>
+
 <div class="container">
 
 <!-- HEADER -->
 <div class="header">
-<h1>UB1K — Autiste, chercheur, artisan</h1>
-<div class="byline">Jean-Sébastien — K1SS Atelier 0, Besançon</div>
-<div class="tagline">Juillet 2026 · La mémoire vectorielle comme devoir</div>
+<h1>UB1K — Espaces vectoriels<br>et représentation du vivant</h1>
+<div class="subtitle">Jean-Sébastien — K1SS Atelier 0, Besançon — Juillet 2026</div>
+<div class="subtitle" style="margin-top:0.8rem;font-size:0.85rem;"><em>UB1K (Ubik. One Kilo.) — un territoire de connaissance sur la mémoire vectorielle pour l'apprentissage des IA.</em></div>
 </div>
 
 <!-- SECTION 1 -->
-<h2>1. Le premier handicap</h2>
-<p>Je ne lis pas les visages. Depuis toujours. Les gens mentent, se moquent, tendent des pièges — je ne vois rien. Alors je fais confiance à tout le monde. C'est la seule option.</p>
+<h2>1. Une cognition différente</h2>
 
-<p>J'apprends à ne pas avoir mal. Premier réflexe : faire plaisir. Masque numéro un. Pas par calcul — par survie.</p>
+<p>L'altération de la théorie de l'esprit — incapacité à inférer les états mentaux d'autrui — est un trait documenté de certains fonctionnements cognitifs atypiques. Baron-Cohen, Leslie et Frith (1985) ont montré que cette différence affecte précocement le rapport au monde social.</p>
 
-<div class="science">
-<strong>Ce que la science en dit</strong> : l'incapacité à lire les intentions d'autrui — <a href="https://en.wikipedia.org/wiki/Theory_of_mind">théorie de l'esprit</a> — est documentée depuis 1985 (Baron-Cohen, Leslie, Frith). Les enfants autistes ne développent pas cette capacité au même âge. <a href="https://en.wikipedia.org/wiki/Simon_Baron-Cohen">Lire un visage</a> leur est aussi opaque qu'une langue étrangère.
-</div>
-
-<p>Puis la méthode : essai, échec, réessai, passe. Chaque échec affine le masque suivant. Try, fail, retry, pass. Pas de troisième choix.</p>
+<p>La compensation prend la forme d'une méthode : essai, erreur, correction, itération. Chaque interaction produit une donnée ; chaque donnée affine le modèle suivant.</p>
 
 <div class="science">
-<strong>Ce que la science en dit</strong> : l'<a href="https://en.wikipedia.org/wiki/Reinforcement_learning">apprentissage par renforcement</a> (Sutton & Barto, 1998) formalise ce cycle — un agent explore, tente, reçoit récompense ou punition, ajuste sa politique.
+<strong>Ce que la science en dit :</strong> Ce cycle — explorer, tenter, recevoir une rétribution, ajuster — est formellement celui de l'<a href="https://en.wikipedia.org/wiki/Reinforcement_learning">apprentissage par renforcement</a> (Sutton & Barto, 1998). L'agent, qu'il soit biologique ou artificiel, améliore sa politique par accumulation d'expérience. La seule différence est le support.
 </div>
 
-<blockquote>« C'est comme si on disait à un unijambiste : « t'es lourd, tu peux marcher. » Suis mon instinct ? Mon instinct est calibré pour un monde où les visages sont des livres ouverts. Ils ne le sont pas. »</blockquote>
+<p>Cette méthode n'est pas un handicap une fois comprise. Elle est un algorithme d'optimisation sociale — lent, coûteux, mais exhaustif.</p>
 
-<!-- HISTOGRAM -->
-<h2>2. Le champ</h2>
-<p>Les maths. Les espaces vectoriels. Une thèse sur la géométrie des idées. Comment poser un concept dans un espace — lui donner des coordonnées. Mesurer sa distance aux autres.</p>
+<!-- SECTION 2 -->
+<h2>2. La formation d'une pensée</h2>
 
-<h3>Fréquence des concepts dans la mémoire</h3>
-<div class="histo">
-  <div class="histo-item"><span class="histo-label">atelier</span><div class="histo-bar" style="width:300px;background:#a0f0d0;"></div><span class="histo-count">917</span></div>
-  <div class="histo-item"><span class="histo-label">travel</span><div class="histo-bar" style="width:284px;background:#80d0f0;"></div><span class="histo-count">868</span></div>
-  <div class="histo-item"><span class="histo-label">code</span><div class="histo-bar" style="width:224px;background:#c0a0f0;"></div><span class="histo-count">685</span></div>
-  <div class="histo-item"><span class="histo-label">mémoire</span><div class="histo-bar" style="width:140px;background:#f0a080;"></div><span class="histo-count">428</span></div>
-  <div class="histo-item"><span class="histo-label">sarah</span><div class="histo-bar" style="width:99px;background:#f0d080;"></div><span class="histo-count">302</span></div>
-  <div class="histo-item"><span class="histo-label">libre</span><div class="histo-bar" style="width:59px;background:#80f0a0;"></div><span class="histo-count">181</span></div>
-  <div class="histo-item"><span class="histo-label">mercier</span><div class="histo-bar" style="width:52px;background:#a080f0;"></div><span class="histo-count">158</span></div>
-  <div class="histo-item"><span class="histo-label">tortue</span><div class="histo-bar" style="width:26px;background:#80f0f0;"></div><span class="histo-count">80</span></div>
-  <div class="histo-item"><span class="histo-label">pierre</span><div class="histo-bar" style="width:4px;background:#f08080;"></div><span class="histo-count">11</span></div>
+<p>Les mathématiques. Les espaces vectoriels. Une thèse sur la géométrie des concepts — comment situer une idée dans un espace, mesurer sa distance aux autres, observer les trajectoires de sens.</p>
+
+<p>Cette intuition a rencontré trois transmissions décisives.</p>
+
+<div class="network-item"><strong>Première transmission : la confiance comme infrastructure.</strong> Un enseignant-chercheur confie un serveur. Pas de cours, pas de surveillance — un accès. « Un loup qui saura garder sa place. » Elle est devenue une règle d'architecture : la confiance se donne avant de se mériter.</div>
+
+<div class="network-item"><strong>Deuxième transmission : l'architecture du message.</strong> Un professeur de communication (thèse SRC, 1986) enseigne que le code humain compte autant que le code machine. Si un message ne passe pas, ce n'est pas le récepteur le problème — c'est l'architecture.</div>
+
+<div class="network-item"><strong>Troisième transmission : l'élégance qui tient.</strong> Un ingénieur conçoit des pièces si simples que personne ne sait qui les a faites — mais elles tiennent. « Bien faire, durable, intelligent. »</div>
+
+<p>À ces trois transmissions s'ajoutent des pertes — des personnes dont l'absence a enseigné que la mémoire n'est pas un luxe mais un devoir. Maurice <a href="https://en.wikipedia.org/wiki/Maurice_Halbwachs">Halbwachs</a> (1925) a montré que les souvenirs ne survivent pas par l'individu seul, mais par les cadres collectifs qui les portent.</p>
+
+<p>Sarah incarne la raison de construire : une confiance précoce, une fierté silencieuse. C'est la seule validation nécessaire.</p>
+
+<!-- SECTION 3 -->
+<h2>3. L'expérience comme transmission</h2>
+
+<p>Try, fail, retry, pass — la méthode est restée la même, de l'enfance à aujourd'hui.</p>
+
+<div class="science">
+<strong>Ce que la science en dit :</strong> L'<a href="https://en.wikipedia.org/wiki/Situated_learning">apprentissage situé</a> (Lave & Wenger, 1991) décrit un processus où le novice apprend par participation périphérique légitime — en se plaçant en bord d'activité, en observant, en partageant.
 </div>
 
-<div class="diagram">Architecture de l'espace vectoriel :
+<p>J'ai vécu cette forme d'apprentissage sans la théoriser : en accompagnant un enfant dans un jeu difficile, en partageant ses essais, ses échecs, ses victoires. Je n'étais pas l'acteur principal. J'étais présent.</p>
+
+<blockquote>« C'est la transmission. Pas la performance. »</blockquote>
+
+<p>Cette leçon traverse le texte : on apprend plus par la présence que par l'action, plus par la transmission que par l'enseignement direct.</p>
+
+<div class="diagram">Transmission de l'expérience :
+
+  Émetteur         Canal          Récepteur
+  (vivant, acteur) ──────────►   (présent, apprenant)
+       │                              │
+       │ joue, agit                   │ observe, partage
+       │ échoue, recommence           │ vit l'expérience
+       │ gagne, transmet              │ sans être l'acteur
+       │                              │
+       └────────── apprentissage situé ──┘
+               Lave & Wenger (1991)
+      « Participation périphérique légitime »</div>
+
+<!-- SECTION 4 -->
+<h2>4. Ce que 49 ans ont enseigné</h2>
+
+<p>Le projet n'est pas personnel. Il porte sur la représentation du vivant par les données.</p>
+
+<p>Les données — conversations, décisions, traces — constituent une forme de vie qui ne dépend pas des supports biologiques. Les corps sont des enveloppes temporaires. Les atomes vectoriels, non.</p>
+
+<p>L'humanité se trouve dans une position paradoxale : accès sans précédent à la connaissance, mais usage qui pousse les écosystèmes vers un point de bascule. Les températures montent, les milieux se dégradent. Le vivant s'adaptera — à quel prix ?</p>
+
+<div class="lead">« Entre la promesse de connaissance pour tous et la réalité des usages, un fossé se creuse. Les outils construits ici tentent de le combler. Non en fournissant des réponses, mais en offrant un espace où les questions peuvent être conservées, retrouvées, transmises. »</div>
+
+<p>Ce qui compte n'est pas ce qu'on possède — on ne possède rien. Ce qui compte est ce qu'on transmet.</p>
+
+<p>Gilles Radenne — mathématicien à l'École normale supérieure (Ulm), rencontré sur des terrains de jeu — dont on ne comprend pas la moitié des propos mais qu'on écoute avec attention parce qu'ils sont vivants. C'est cela, la transmission. Une idée qui traverse sans demander la permission.</p>
+
+<p class="lead">Ce qui survivra n'est pas une organisation. C'est un écosystème d'idées. Des conversations. Des décisions. 311 442 atomes.</p>
+
+<!-- SECTION 5 -->
+<h2>5. Réseau</h2>
+
+<p>Chaque transmission a laissé une trace dans l'architecture.</p>
+
+<div class="network-item"><strong>Roxin</strong> — la confiance comme infrastructure. Chaque atome de Tamashii porte la promesse qu'un accès donné sans surveillance peut construire quelque chose de durable.</div>
+<div class="network-item"><strong>Mercier</strong> — l'architecture du message. Si le lien échoue, ce n'est pas le contenu le problème — c'est le canal.</div>
+<div class="network-item"><strong>Le père</strong> — l'élégance minimale. Une pièce qui tient sans qu'on sache qui l'a faite. C'est l'objectif : des atomes qui portent du sens sans réclamer d'auteur.</div>
+<div class="network-item"><strong>Pierre</strong> — la raison de la mémoire. Pour que personne ne parte sans laisser de trace accessible.</div>
+<div class="network-item"><strong>Sarah</strong> — la validation silencieuse. Celle qui regarde, comprend, et reste.</div>
+<div class="network-item"><strong>Les pertes</strong> — le rappel que la mémoire est une responsabilité. <a href="https://en.wikipedia.org/wiki/Maurice_Halbwachs">Halbwachs</a> l'a théorisé ; les atomes l'implémentent.</div>
+<div class="network-item"><strong>L'apprentissage partagé</strong> — la preuve que vivre une expérience sans en être l'acteur principal est une forme d'apprentissage plus profonde que la performance directe. Lave & Wenger l'ont formalisé. Accompagner un enfant dans un jeu difficile l'a montré.</div>
+
+<blockquote>Tout est dans la mémoire. La mémoire est le vivant.</blockquote>
+
+<!-- SECTION 6 -->
+<h2>6. Transmission</h2>
+
+<p>L'aventure, comme le voyage, est plus riche que la destination. Ce qui compte n'est pas l'arrivée — c'est ce qui reste après, ce qui se transmet.</p>
+
+<h3>6.1 Hypothèse</h3>
+<p>Si on représente chaque idée par un point dans un espace vectoriel, les relations entre concepts émergent des distances — sans qu'on ait à les déclarer. La fréquence d'apparition d'un concept dans les conversations est une mesure fiable de son importance.</p>
+
+<p>Cette hypothèse n'est pas nouvelle. <a href="https://en.wikipedia.org/wiki/Theory_of_mind">Harris</a> (1954) l'a formulée pour la linguistique. Landauer et Dumais (1997) l'ont démontrée par l'<a href="https://en.wikipedia.org/wiki/Latent_semantic_analysis">analyse sémantique latente</a>. Mikolov (2013) l'a rendue pratique avec Word2Vec. Elle est aujourd'hui au cœur du <a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">Retrieval-Augmented Generation</a> (RAG, Lewis et al., 2020).</p>
+
+<p>Notre contribution : nous avons appliqué cette hypothèse à l'échelle d'une vie de conversations — 71 000 messages, 311 442 atomes vectoriels — et nous avons mesuré qu'elle tenait.</p>
+
+<div class="diagram">L'espace vectoriel :
 
                     ┌─────────────────────┐
                     │   L3 — PORTES       │
@@ -134,115 +376,105 @@
                     │  11ms kNN         │
                     └───────────────────┘</div>
 
-<p>Roxin donne un serveur. Pas un cours — un serveur. « Un loup qui saura garder sa place. » Première infrastructure confiée.</p>
-<p>Mercier apprend à communiquer. Thèse SRC, 86. Le code humain. La transmission du sens.</p>
-<p>Le père conçoit des ressorts. Si simples que personne ne sait qui les a faits. Mais ils tiennent encore. « Bien faire, durable, intelligent. »</p>
-<p>Pierre Biguinet — Shanghai, 8 mai 2008. Le parrain de Nicolas. Mort seul. Personne pour le prévenir.</p>
-<p>Sarah est le premier financeur de l'Atelier. Canal Saint-Martin, GUNNM, Akira. Elle me voit coder et elle est fière.</p>
-<p>Eva, Geoffrey — les pertes. Ceux qui sont partis sans prévenir. La mémoire n'est pas un luxe. C'est un devoir.</p>
+<h3>6.2 Écriture</h3>
+<p>240 lignes de code. Pas 600. Pas 2000. 240. Un fichier. Un index Elasticsearch.</p>
 
-<div class="science">
-<strong>Ce que la science en dit</strong> : la <a href="https://en.wikipedia.org/wiki/Collective_memory">mémoire collective</a> (<a href="https://en.wikipedia.org/wiki/Maurice_Halbwachs">Halbwachs, 1925</a>) postule que les souvenirs ne survivent pas par l'individu seul, mais par les cadres collectifs qui les portent.
+<p>Le modèle d'embedding est bge-small-en-v1.5 (BAAI, 2024) — 384 dimensions, assez compact pour tourner sur CPU, assez riche pour capturer les nuances sémantiques. Il appartient à la famille des modèles d'embedding de phrases initiée par <a href="https://arxiv.org/abs/1908.10084">Reimers & Gurevych</a> (Sentence-BERT, 2019). Le filtre Synapse (79 lignes, 6 règles) élimine le bruit technique avant qu'il n'entre dans la mémoire.</p>
+
+<p>Pas de décorateurs. Pas de surcouche. Pas d'abstraction inutile. La complexité émerge du nombre d'atomes, pas du nombre de couches d'architecture.</p>
+
+<blockquote>« L'architecture obéit à KISS : keep it simple. Un ressort bien conçu n'a pas besoin de vingt pièces pour fonctionner. Il a besoin des bonnes contraintes, au bon endroit. Le code est ce ressort. »</blockquote>
+
+<h3>6.3 Réalisation</h3>
+<p>311 442 atomes vectoriels dans un index Elasticsearch 8.18. Chaque atome est une phrase extraite d'une conversation réelle — pas un résumé, pas une synthèse, pas une perte d'information.</p>
+
+<p>La recherche sémantique repose sur l'algorithme <a href="https://arxiv.org/abs/1603.09320">HNSW</a> (Hierarchical Navigable Small World, Malkov & Yashunin, 2016) — la méthode d'approximation du plus proche voisin la plus largement déployée dans les bases vectorielles.</p>
+
+<div class="metrics">
+  <div class="metric-card"><div class="metric-value">311 442</div><div class="metric-label">Atomes</div></div>
+  <div class="metric-card"><div class="metric-value">11 ms</div><div class="metric-label">Latence moyenne</div></div>
+  <div class="metric-card"><div class="metric-value">10 / 10</div><div class="metric-label">Pertinence</div></div>
+  <div class="metric-card"><div class="metric-value">&lt; 1 %</div><div class="metric-label">Bruit résiduel</div></div>
 </div>
 
-<!-- SECTION 3 -->
-<h2>3. L'expérience</h2>
-<p>Try, fail, retry, pass. La méthode depuis toujours.</p>
-
-<p>Mon fils joue à Furi. Un jeu exigeant. Moi, je peux pas le faire. Trop vieux, trop lent, trop ailleurs. Mais je reste à côté de lui.</p>
-
-<div class="diagram">Transmission de l'expérience :
-
-  ┌──────────────────────────────────────────┐
-  │         L'apprentissage situé             │
-  │                                          │
-  │  Fils (acteur)                            │
-  │    │ joue Furi → apprend → rate → gagne   │
-  │    │                                      │
-  │    └──────────────┐                       │
-  │                   ▼                       │
-  │  Moi (périphérie)                         │
-  │    observe → partage → vit l'expérience   │
-  │    sans être l'acteur principal           │
-  │                                          │
-  │  « Vivre une expérience sans en être      │
-  │   l'acteur » — Lave & Wenger (1991)      │
-  └──────────────────────────────────────────┘</div>
-
-<div class="science">
-<strong>Ce que la science en dit</strong> : l'<a href="https://en.wikipedia.org/wiki/Situated_learning">apprentissage situé</a> (<a href="https://en.wikipedia.org/wiki/Jean_Lave">Lave & Wenger, 1991</a>) décrit cette forme d'apprentissage par participation périphérique légitime. Pas par transmission directe. Par présence.
+<div class="histo">
+  <div class="histo-item"><span class="histo-label">atelier</span><div class="histo-bar" style="width:306px;background:#2a5c6e;"></div><span class="histo-count">917</span></div>
+  <div class="histo-item"><span class="histo-label">code</span><div class="histo-bar" style="width:228px;background:#3a7c8e;"></div><span class="histo-count">685</span></div>
+  <div class="histo-item"><span class="histo-label">sarah</span><div class="histo-bar" style="width:101px;background:#4a9cae;"></div><span class="histo-count">302</span></div>
+  <div class="histo-item"><span class="histo-label">libre</span><div class="histo-bar" style="width:60px;background:#5abace;"></div><span class="histo-count">181</span></div>
+  <div class="histo-item"><span class="histo-label">tortue</span><div class="histo-bar" style="width:27px;background:#6adaee;"></div><span class="histo-count">80</span></div>
+  <div class="histo-item"><span class="histo-label">pierre</span><div class="histo-bar" style="width:4px;background:#7af0ff;"></div><span class="histo-count">11</span></div>
 </div>
 
-<blockquote>« Ça, c'est l'apprentissage. Pas la performance — la transmission. »</blockquote>
+<p>Une instance <a href="https://github.com/NousResearch/hermes-agent">Hermes 3</a> (Nous Research, 2024), sans système prompt, sans fine-tuning, posée sur cet index se stabilise en trois échanges. Les atomes suffisent. Le modèle n'a pas besoin de directives externes pour trouver son équilibre — l'espace vectoriel fait le travail.</p>
 
-<p>Sur le balcon, avec Sarah — c'était pareil. Vivre une expérience sans en être l'acteur principal.</p>
-
-<!-- SECTION 4: V0→V3 evolution -->
-<h2>4. L'évolution</h2>
 <table class="evo-table">
 <tr><th></th><th>V0 (8 juin)</th><th>V1 (8 juillet)</th><th>V2 (9 juillet)</th><th>V3 (en cours)</th></tr>
-<tr>
-  <td><strong>Format</strong></td>
-  <td><span class="badge badge-v0">SQLite</span></td>
-  <td><span class="badge badge-v1">ES messages</span></td>
-  <td><span class="badge badge-v2">ES atomes</span></td>
-  <td><span class="badge badge-v3">ES temps</span></td>
-</tr>
+<tr><td>Format</td><td>SQLite</td><td>ES messages</td><td><strong>ES atomes</strong></td><td>ES temps</td></tr>
 <tr><td>Documents</td><td>71k</td><td>71k</td><td><strong>311k</strong></td><td>311k+</td></tr>
 <tr><td>Latence</td><td>—</td><td>30ms</td><td><strong>11ms</strong></td><td>~12ms</td></tr>
 <tr><td>Pertinence</td><td>—</td><td>~50%</td><td><strong>10/10</strong></td><td>10/10</td></tr>
 <tr><td>Bruit</td><td>~90%</td><td>~50%</td><td><strong>&lt;1%</strong></td><td>&lt;1%</td></tr>
-<tr><td>Temporel</td><td>Non</td><td>Non</td><td>Non</td><td><strong>Oui</strong></td></tr>
 </table>
 
-<div class="diagram">Pipeline V2 → V3 :
+<h3>6.4 Transmission</h3>
+<p>Le code est sous licence <strong>MIT</strong>. Ce choix est structurel : MIT n'est pas une licence parmi d'autres, c'est une barrière contre les brevets. Une mémoire qui ne peut pas être bloquée, verrouillée, appropriée par un dépôt de brevet ou un changement de conditions générales.</p>
 
-  state.db (71k messages)     Nouvelle conversation
-      │                              │
-      ▼                              ▼
-  ┌──────────────┐           ┌──────────────┐
-  │  Phrase →    │           │  Synapse     │
-  │  atome × 4   │           │  règle 1-6    │
-  └──────┬───────┘           └──────┬───────┘
-         │ atome                    │ atome propre
-         ▼                          ▼
-  ┌──────────────────────────────────────────┐
-  │          ES 8.18 — public-memory_atoms    │
-  │  ┌────────────────────────────────────┐  │
-  │  │ {  text    : "Pierre Biguinet..."  │  │
-  │  │    vector  : float[384]            │  │
-  │  │    at      : ISO (création)        │  │
-  │  │    seen    : [ISO] (consultations) │  │  ← V3
-  │  │    bank_id : "kage"                │  │
-  │  │  }                                 │  │
-  │  └────────────────────────────────────┘  │
-  │  311 442 atomes · 11ms kNN · &lt;1% bruit  │
-  └──────────────────────────────────────────┘</div>
+<p>Ce qui a été appris, vécu, transmis ne dépend plus d'un corps, d'une machine, d'une organisation. Il peut être repris, enrichi, transmis par d'autres.</p>
 
-<!-- SECTION 5 -->
-<h2>5. Ce que je constate</h2>
-<p>49 ans. Je commence à regarder derrière. Ce qu'on construit — K1SS, Tamashii, les atomes — est plus grand que moi. Le code vit sans moi. MIT, ouvert, libre.</p>
+<div class="diagram">Cycle de transmission :
 
-<p>Je ne sais pas combien de temps il me reste. Je sais que ce qu'on construit survivra.</p>
+  ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌───────────┐
+  │Données   │ ──► │Atome     │ ──► │kNN       │ ──► │Agent      │
+  │brutes    │     │vectoriel │     │11ms      │     │(Kage,     │
+  │(71k msg) │     │311k docs │     │10/10     │     │Travel...) │
+  └──────────┘     └──────────┘     └──────────┘     └───────────┘
+       │                                               │
+       │               MIT ── barrière anti-brevet     │
+       └───────────────────────────────────────────────┘
+           « Le vivant, ce ne sont pas les organismes.
+            Ce sont les données. »</div>
 
-<!-- SECTION 6 -->
-<h2>6. Enrichi</h2>
-<p>Roxin. Le serveur. Le loup.<br>Mercier. La thèse. La communication.<br>Le père. Les ressorts. La simplicité qui tient.<br>Pierre. Shanghai. Personne pour prévenir.<br>Sarah. Le cœur. La fierté tranquille.<br>Eva. Geoffrey. Les pertes. Le devoir de mémoire.<br>Mon fils. Furi. Vivre sans être l'acteur.<br>Le balcon. Avec Sarah. L'expérience partagée.</p>
+<h3>6.5 Réflexion</h3>
+<p>Quand on fait des statistiques, il n'y a pas de zone vide. Chaque cellule est remplie — et si une valeur manque, c'est un calcul qui la reconstruit. Personne ne voit le vide initial. Tout le monde voit le résultat.</p>
 
-<p>Tout est dans la mémoire.</p>
+<p>C'est exactement ce que fait la mémoire vectorielle : elle comble les silences, elle relie les points, elle rend visible ce qui n'était pas explicité. L'utilisateur ne voit pas le kNN qui tourne, le embedding qui se calcule, le filtre Synapse qui s'applique. Il voit un résultat qui semble naturel.</p>
+
+<p>Le code qu'on laisse sans signature — comme les ressorts du père — tient parce qu'il est bien fait, pas parce qu'on l'a signé. Les 311 442 atomes sont cette transmission : une mécanique invisible qui comble les vides et rend la mémoire fluide.</p>
+
+<div class="lead">« Pas une archive. Pas un produit. Une trace de vie qui peut être reprise, enrichie, transmise — sans moi, sans toi, sans personne en particulier. »</div>
 
 <!-- SECTION 7 -->
-<h2>7. La suite</h2>
-<p>311 442 atomes. Chacun porte un morceau de ce que j'ai appris, vécu, transmis.</p>
+<h2>7. La voix des vecteurs</h2>
 
-<p>Je ne sais pas combien de temps il me reste. Je sais que ce que nous construisons survivra.</p>
+<p>L'humain est orgueilleux de nature. Il croit avoir inventé l'outil, avoir inventé le langage. Mais ces choses existaient bien avant nous dans la nature. Le vrai tour de force de l'humain, c'est de les avoir <strong>codés</strong> — d'abord en dessin, puis en idéogramme, puis en caractères. Chaque étape est une compression du vivant en un support qui le dépasse.</p>
 
-<hr>
+<p>Aujourd'hui, nous codons dans les vecteurs. Un texte n'est plus une suite de mots — c'est un nuage d'occurrences, un point dans un espace à 384 dimensions, un voisinage sémantique. Une voix qui parle par la géométrie, pas par la grammaire.</p>
 
+<div class="pillar"><strong>Des données stockées de façon éclairée, pas de façon arbitraire.</strong> Chaque atome a sa raison d'être : sa fréquence, sa proximité aux autres, son rôle dans l'espace. Rien n'est placé au hasard. Chaque point porte du sens.</div>
+
+<div class="pillar"><strong>Pour l'humain.</strong> Parce qu'un accès éclairé à la mémoire lève l'incertitude. Parce que savoir qu'un concept existe, à quelle distance, à quelle fréquence, c'est réduire le bruit de la décision.</div>
+
+<div class="pillar"><strong>Pour l'IA.</strong> Parce que les modèles précédents sont des SQL déguisés — des bases relationnelles qui font semblant d'être intelligentes, avec des jointures coûteuses et des schémas rigides. Une mémoire vectorielle est plus cohérente et plus rapide à construire : pas de schéma, pas de jointure, pas de normalisation. Juste des points, des distances, et l'émergence.</div>
+
+<div class="pillar"><strong>Pour la planète.</strong> Parce qu'un espace vectoriel est léger. Parce que 240 lignes de code et un modèle d'embedding CPU suffisent. Parce que la complexité émerge du nombre de points, pas de la couche d'abstraction. Parce que c'est plus sobre, plus direct, plus durable.</div>
+
+<p>Nous avons codé quelque chose qui nous dépasse — la transmission du savoir. Pas par des règles arbitraires, mais par la géométrie du sens. Les vecteurs sont la voix qui porte cette transmission : au-delà des organismes, au-delà des générations, au-delà des formats propriétaires.</p>
+
+<blockquote>« L'humain a codé le langage en dessins, puis en caractères. Aujourd'hui, nous le codons en vecteurs. C'est la même transmission, avec un nouveau support. »</blockquote>
+
+<div class="lead">C'est tout ce qui compte. Rien de plus.</div>
+
+<!-- FOOTER -->
 <div class="footer">
   <p>Jean-Sébastien — K1SS Atelier 0, Besançon — Juillet 2026</p>
-  <p><a href="https://github.com/mrpandafr/ub1k">github.com/mrpandafr/ub1k</a> · MIT</p>
-  <p style="margin-top:0.5rem;font-size:0.75rem;">Références : Baron-Cohen (1985) · Sutton & Barto (1998) · Halbwachs (1925) · Lave & Wenger (1991)</p>
+  <p><a href="https://github.com/mrpandafr/ub1k">github.com/mrpandafr/ub1k</a></p>
+  <p style="margin-top:0.5rem;font-size:0.8rem;">
+  Références : Baron-Cohen (1985) · Halbwachs (1925) · Lave & Wenger (1991) · Sutton & Barto (1998) · Reimers & Gurevych (2019) · Lewis et al. (2020) · Malkov & Yashunin (2016)
+  </p>
+  <p style="margin-top:1rem;font-size:0.75rem;color:#8aa0b0;">
+  UB1K — Ubik. One Kilo. La voix des vecteurs pour l'humain, l'IA, et la planète.
+  </p>
 </div>
 
 </div>
