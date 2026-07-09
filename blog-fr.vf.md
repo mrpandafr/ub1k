@@ -2,6 +2,8 @@
 
 *Jean-Sébastien — K1SS Atelier 0, Besançon — Juillet 2026*
 
+*UB1K (Ubik. One Kilo.) est un territoire de connaissance sur la mémoire vectorielle pour l'apprentissage des IA. Ce texte en est la synthèse personnelle.*
+
 ---
 
 ## 1. Une cognition différente
@@ -40,6 +42,8 @@ L'apprentissage situé (Lave & Wenger, 1991) décrit un processus où le novice 
 
 C'est la transmission. Pas la performance.
 
+Cette leçon traverse le texte : on apprend plus par la présence que par l'action, plus par la transmission que par l'enseignement direct. De l'enfant qui joue aux atomes qui portent la mémoire, le mécanisme est le même — être là, partager, transmettre.
+
 ---
 
 ## 4. Ce que 49 ans ont enseigné
@@ -54,7 +58,7 @@ Entre la promesse de connaissance pour tous et la réalité des usages, un foss�
 
 Ce qui compte n'est pas ce qu'on possède — on ne possède rien. Ce qui compte est ce qu'on transmet. Les données qu'on laisse — les vrais échanges, les décisions prises, les moments partagés — sont la seule forme de persistence.
 
-Un mathématicien rencontré sur des terrains de jeu, dont on ne comprend pas la moitié des propos mais qu'on écoute avec attention parce qu'ils sont vivants — c'est cela, la transmission. Une idée qui traverse sans demander la permission.
+Gilles Radenne — mathématicien à l'École normale supérieure (Ulm), rencontré sur des terrains de jeu — dont on ne comprend pas la moitié des propos mais qu'on écoute avec attention parce qu'ils sont vivants. C'est cela, la transmission. Une idée qui traverse sans demander la permission.
 
 Ce qui survivra n'est pas une organisation. C'est un écosystème d'idées. Des conversations. Des décisions. 311 442 atomes.
 
@@ -76,7 +80,7 @@ Chaque transmission a laissé une trace dans l'architecture.
 
 **Les pertes** — le rappel que la mémoire est une responsabilité. Halbwachs l'a théorisé ; les atomes l'implémentent.
 
-**L'apprentissage partagé** — la preuve que vivre une expérience sans en être l'acteur principal est une forme d'apprentissage plus profonde que la performance directe. Lave & Wenger l'ont formalisé. Un enfant jouant à un jeu difficile l'a montré.
+**L'apprentissage partagé** — la preuve que vivre une expérience sans en être l'acteur principal est une forme d'apprentissage plus profonde que la performance directe. Lave & Wenger l'ont formalisé. Accompagner un enfant dans un jeu difficile l'a montré.
 
 Tout est dans la mémoire. La mémoire est le vivant.
 
@@ -158,7 +162,7 @@ Nous avons codé quelque chose qui nous dépasse — la transmission du savoir. 
 
 L'humain a codé le langage en dessins, puis en caractères. Aujourd'hui, nous le codons en vecteurs. C'est la même transmission, avec un nouveau support.
 
-C'est tout ce qui compte.
+C'est tout ce qui compte. Rien de plus.
 
 ---
 
