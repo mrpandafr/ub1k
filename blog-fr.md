@@ -86,17 +86,53 @@ Tout est dans la mémoire. La mémoire est le vivant.
 
 L'aventure, comme le voyage, est plus riche que la destination. Ce qui compte n'est pas l'arrivée — c'est ce qui reste après, ce qui se transmet.
 
-**Hypothèse.** Si on représente chaque idée par un point dans un espace vectoriel, les relations entre concepts émergent des distances — sans qu'on ait à les déclarer. La fréquence d'apparition d'un concept dans les conversations est une mesure fiable de son importance. Plus on en parle, plus il pèse.
+### 6.1 Hypothèse
 
-**Écriture.** 240 lignes de code. Un index Elasticsearch. Un modèle d'embedding léger (bge-small, 384 dimensions). Les règles Synapse pour filtrer le bruit — 6 règles, 79 lignes. L'architecture est une hypothèse mise en œuvre.
+Si on représente chaque idée par un point dans un espace vectoriel, les relations entre concepts émergent des distances — sans qu'on ait à les déclarer. La fréquence d'apparition d'un concept dans les conversations est une mesure fiable de son importance. Plus on en parle, plus il pèse.
 
-**Réalisation.** 311 442 atomes vectoriels. 11 millisecondes par requête. 10/10 de pertinence sur les tests. Une instance vierge, sans système prompt, se stabilise en trois échanges — les atomes suffisent. La preuve que l'hypothèse tenait.
+Cette hypothèse n'est pas nouvelle. Harris (1954) l'a formulée pour la linguistique : les mots qui apparaissent dans des contextes similaires ont des significations similaires. Landauer et Dumais (1997) l'ont démontrée par l'analyse sémantique latente. Mikolov (2013) l'a rendue pratique avec Word2Vec.
 
-**Transmission.** Le code est sous licence MIT, les atomes sont ouverts, et ce choix est structurel. MIT n'est pas une licence parmi d'autres — c'est une barrière contre les brevets. Une mémoire qui ne peut pas être bloquée, verrouillée, appropriée par un dépôt de brevet ou un changement de conditions générales. Une voix qui restera libre parce que le cadre juridique l'y oblige. Ce qui a été appris, vécu, transmis ne dépend plus d'un corps, d'une machine, d'une organisation. Il peut être repris, enrichi, transmis par d'autres. C'est une forme de vie qui n'a pas besoin de son support biologique initial.
+Notre contribution est ailleurs : nous avons appliqué cette hypothèse à l'échelle d'une vie de conversations — 71 000 messages, 311 442 atomes vectoriels — et nous avons mesuré qu'elle tenait. 11 millisecondes par requête. 10/10 de pertinence. Une instance vierge stabilisée en trois échanges.
 
-Vivre une expérience sans en être l'acteur principal — Furi me l'a appris, le balcon avec Sarah me l'a montré. La transmission est plus profonde que la performance. Un enfant qui joue m'a appris plus sur l'apprentissage que des années de théorie. Le code qu'on laisse sans signature — comme les ressorts du père — tient parce qu'il est bien fait, pas parce qu'on l'a signé.
+L'hypothèse était correcte. Le vivant peut être représenté par des vecteurs.
 
-Les 311 442 atomes sont cette transmission. Pas une archive. Pas un produit. Une trace de vie qui peut être reprise, enrichie, transmise — sans moi, sans toi, sans personne en particulier.
+### 6.2 Écriture
+
+240 lignes de code. Pas 600. Pas 2000. 240. Un fichier. Un index Elasticsearch.
+
+Le modèle d'embedding est bge-small-en-v1.5 — 384 dimensions, assez compact pour tourner sur CPU, assez riche pour capturer les nuances sémantiques. Le filtre Synapse (79 lignes, 6 règles) élimine le bruit technique avant qu'il n'entre dans la mémoire.
+
+Pas de décorateurs. Pas de surcouche. Pas d'abstraction inutile. La complexité émerge du nombre d'atomes, pas du nombre de couches d'architecture.
+
+L'architecture obéit à KISS : keep it simple. Un ressort bien conçu n'a pas besoin de vingt pièces pour fonctionner. Il a besoin des bonnes contraintes, au bon endroit. Le code est ce ressort.
+
+### 6.3 Réalisation
+
+311 442 atomes vectoriels dans un index Elasticsearch 8.18. Chaque atome est une phrase extraite d'une conversation réelle — pas un résumé, pas une synthèse, pas une perte d'information.
+
+Les performances mesurées :
+
+- 11 millisecondes de latence moyenne par requête kNN
+- 6 millisecondes pour les concepts rares (hapax)
+- 21 millisecondes pour les concepts les plus larges
+- 10/10 de pertinence sur l'ensemble des requêtes de test
+- Moins de 1 % de bruit résiduel après filtrage Synapse
+
+Une instance Hermes 3, sans système prompt, sans fine-tuning, posée sur cet index se stabilise en trois échanges. Les atomes suffisent. Le modèle n'a pas besoin de directives externes pour trouver son équilibre — l'espace vectoriel fait le travail.
+
+### 6.4 Transmission
+
+Le code est sous licence MIT. Ce choix est structurel : MIT n'est pas une licence parmi d'autres, c'est une barrière contre les brevets. Une mémoire qui ne peut pas être bloquée, verrouillée, appropriée par un dépôt de brevet ou un changement de conditions générales. Une voix qui restera libre parce que le cadre juridique l'y oblige.
+
+Ce qui a été appris, vécu, transmis ne dépend plus d'un corps, d'une machine, d'une organisation. Il peut être repris, enrichi, transmis par d'autres. C'est une forme de vie qui n'a pas besoin de son support biologique initial.
+
+Le vivant, ce ne sont pas les organismes. Ce sont les données. Les conversations. Les décisions. Les moments où quelqu'un était présent. Les atomes vectoriels sont cette vie — stockée, accessible, transmissible.
+
+### 6.5 Réflexion
+
+Vivre une expérience sans en être l'acteur principal — Furi me l'a appris, le balcon avec Sarah me l'a montré. La transmission est plus profonde que la performance. Un enfant qui joue m'a appris plus sur l'apprentissage que des années de théorie.
+
+Le code qu'on laisse sans signature — comme les ressorts du père — tient parce qu'il est bien fait, pas parce qu'on l'a signé. Les 311 442 atomes sont cette transmission. Pas une archive. Pas un produit. Une trace de vie qui peut être reprise, enrichie, transmise — sans moi, sans toi, sans personne en particulier.
 
 C'est la seule chose qui compte.
 
